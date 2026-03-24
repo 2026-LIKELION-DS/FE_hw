@@ -26,9 +26,9 @@ body {
   background-position: center bottom;
   background-color: #f4d6e0;
 }
-header {
+.title {
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto 0px;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -70,18 +70,18 @@ h3 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 20px;
-  width: 450px;
+  padding: 10px;
+  width: 500px;
 }
 
 a {
-  padding: 6px 40px;
+  padding: 6px 30px;
   border-radius: 100px;
   font-size: 15px;
   font-family: "OkMallangW";
 }
 a:hover {
-  background-color: #ff6d9982;
+  background-color: #ff9bb9bc;
 }
 
 a:link,
@@ -93,7 +93,7 @@ a:visited {
 section {
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 100%;
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -101,22 +101,30 @@ section {
 }
 
 .photo1 {
-  background-image: url("/FE_hw/session3/img/subin.jpeg");
+  width: 250px;
+  height: 380px;
+  background-image: url("/FE_hw/session3/img/subin2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 10%;
-  width: 250px;
-  height: 350px;
-  margin: 40px;
+  border: 10px solid white;
+  box-shadow: 5px 5px 10px #8d5367b3;
+  margin: 30px auto;
 }
 
+hr {
+  border: 5px solid white;
+  margin-top: 190px;
+}
 .sec1,
 .sec3 {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 17px;
+  font-family: "RoundedFixedsys";
 }
 
 .sec2 {
@@ -132,7 +140,7 @@ section {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .myinfo > p {
@@ -181,7 +189,57 @@ li {
   text-align: center;
 }
 
-photo1 {
-  width: 300px;
-  height: 300px;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  font-family: "RoundedFixedsys";
+}
+
+.photo2,
+.photo3 {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.photo3 {
+  flex: 1;
+  margin-top: 50px;
+  background-image: url(/FE_hw/session3/img/2026.jpeg);
+  width: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: rgb(255, 102, 189) 10px dotted;
+}
+
+.mu1,
+.mu2,
+.mu3 {
+  width: 130px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px #e97ca097;
+}
+.mu1 {
+  background-image: url(/FE_hw/session3/img/mu1.png);
+  position: relative;
+  left: 50px;
+}
+
+.mu2 {
+  background-image: url(/FE_hw/session3/img/mu2.png);
+  position: relative;
+  bottom: 40px;
+}
+.mu3 {
+  background-image: url(/FE_hw/session3/img/mu3.png);
+  position: relative;
+  top: 50px;
+  right: 50px;
 }
