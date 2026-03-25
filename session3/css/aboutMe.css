@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    background-color: #c4f338;
+    font-size: 40px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+img {
+    padding-right: 20px;
+    border-right: 2px solid #000000;
+    margin-right: 10px;
+}
+
+/* 더하고 싶은거: Who Am I와 My Hobbies를 한 번에 -> 2열 구성. 
+농구 사진이랑 드리미 사진만 사이즈를 작게 해서 My Hobbies 칸이 Who Am I? 칸을 넘지않게.
+농구는 왼쪽에 붙고, 드리미는 오른쪽에 붙어서 교차로 엇갈리게 */
