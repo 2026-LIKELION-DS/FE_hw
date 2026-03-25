@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap');
+
+.header{
+    font-family: 'Bitcount Prop Double', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(94, 63, 48);
+    border: 5px dashed rgba(93, 77, 58, 0.837);
+}
+
+body{
+    background-image: url(../img/img_4.jfif);
+}
+/*.aside{
+    display:flex;
+    justify-content: flex-end;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/img_2.jfif);
+    background-size: cover;
+}*/
+.up-article{
+    display: flex;
+    gap: 30x;
+    margin: 50px;
+}
+.up-box1{
+    margin: 50px;
+    width: 330px;
+    height: 200px;
+    background-image: url(../img/img_10.jpg);
+    background-size: cover;
+    border: 4px dashed rgba(93, 77, 58, 0.837);
+}
+.up-text{
+    width: 450px;
+    height: 300px;
+    border: 5px dashed rgba(93, 77, 58, 0.837);
+}
+.down-article{
+    display: flex;
+    gap: 100px;
+    margin: 50px;
+}
+/*.down-icon{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.782);
+    border: 4px dashed rgba(93, 77, 58, 0.361);
+    margin: 50px;
+}*/
+.down-img1{
+    width: 390px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.782);
+    border: 4px dashed rgba(93, 77, 58, 0.361);
+    margin: 50px;
+    display: flex;
+}
+#img1{
+    font-family: 'Playwrite DK Uloopet Guides', sans-serif ;
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.751);
+    width: 330px;
+    height: 330px;
+    /*margin: 30px;*/
+}
+#img1-1{
+    width: 330px;
+    height: 230px;
+    background-image: url(../img/img_11.jpg);
+    background-size: cover;
+
+}
+#img1-2{
+    width: 330px;
+    height: 70px;
+    background-image: url(../img/img_12.jpg);
+    background-size: cover;
+}
+#img2{
+    width: 60px;
+    height: 300px;
+    background-color:rgb(37, 45, 42);
+}
+.down-img2{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.782);
+    border: 4px dashed rgba(93, 77, 58, 0.361);
+    margin: 50px;
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+    color: rgba(93, 66, 41, 0.93);
+}
+.down-text{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.782);
+    border: 4px dashed rgba(93, 77, 58, 0.361);
+    margin: 50px;
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+    color: rgba(93, 66, 41, 0.93);
+}
+.up-text{
+    background-color: rgba(255, 255, 255, 0.782);
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+    color: rgba(93, 66, 41, 0.93);
+}
+.up-icon1{
+    font-family: 'Playwrite DK Uloopet Guides', sans-serif ;
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.751);
+    width: 170px;
+    height: 100px;
+    border: 4px dashed rgba(93, 77, 58, 0.837);
+    margin: 50px;
+    background-image: url(../img/img_6.jfif);
+    background-size: cover;
+}
+.up-icon2{
+    font-family: 'Playwrite DK Uloopet Guides', sans-serif ;
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.751);
+    width: 170px;
+    height: 100px;
+    border: 4px dashed rgba(93, 77, 58, 0.837);
+    margin: 50px;
+    background-image: url(../img/img_7.jfif);
+    background-size: cover;
+}
+.up-icon3{
+    font-family: 'Playwrite DK Uloopet Guides', sans-serif ;
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.751);
+    width: 170px;
+    height: 100px;
+    border: 4px dashed rgba(93, 77, 58, 0.837);
+    margin: 50px;
+    background-image: url(../img/img_5.jfif);
+    background-size: cover;
+}
