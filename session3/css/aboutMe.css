@@ -1,0 +1,67 @@
+.wrapper{
+  width: 400px;          /* 박스 너비 */
+  margin: 0 auto;        /* 가운데 정렬 핵심 */
+
+}
+
+.lidesign {
+    text-align: left;
+    color : yellow;
+}
+
+.title{
+    text-align: center;
+}
+.name{
+    font-size: large;
+}
+
+*{
+    background-color: rgb(247, 206, 211);
+}
+.like, .likes{
+    border-radius: 30px;
+}
+
+.likes{
+    display:inline-block;
+    border : 1px solid rgb(232, 121, 139);
+    border-radius: 30px;
+    background-color:  rgb(205, 230, 247);
+    padding :10;
+}
+.box{
+    display:flex;
+    flex-direction: row;
+}
+.box1{
+    padding: 10px;
+}
+.box2{
+    padding: 0 10px;
+    border : 1px solid rgb(152, 204, 239);
+    border-radius: 30px;    
+}
+
+.inform{
+    padding-top:0%;
+    margin-top: 10px;
+    color : blue;
+}
+.mystyle{
+    display:flex;
+    width: 500px; 
+}
+.photo2{
+    padding: 30 10 30 30;
+}
+.photo3{
+    padding: 30 30 30 0;
+}
+.lastTxt{
+    border : 1px solid rgb(232, 121, 139);
+    border-radius: 30px;    
+    border-width: 2;
+    margin:10;
+    padding: 10 0 10 20;
+}
