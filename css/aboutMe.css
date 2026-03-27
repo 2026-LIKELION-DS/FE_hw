@@ -1,49 +1,84 @@
+.line {
+  border: 1px solid;
+}
+
+.bigbox {
+  background-color: #ffffff98;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.text {
+  flex-direction: column;
+}
+
+.text h1 {
+  text-align: center;
+}
+
 .name-text {
   font-size: 17px;
-  color: #7c7c7c;
   font-weight: bold;
   margin-top: 20px;
+  text-align: center;
+}
+
+.name-text2 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .mainbox {
-  border: 2px solid darkgray;
   width: 800px;
   text-align: center;
   margin: 0 auto;
   padding: 30px;
-  margin: 30px;
   box-shadow: 0 1px 20px 100 rgba(0, 0, 0, 0.1);
 }
 
-footer {
-  text-align: center;
-  background-color: lemonchiffon;
-  color: black;
-  font-size: 12px;
-  padding: 7px;
-}
-
 body {
-  background-color: gainsboro;
+  background-color: rgba(241, 250, 245, 0.351);
 }
 
 .profile {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 40px;
+  flex-direction: column;
 }
 
 .profile img {
-  width: 250px; 
-  height: 250px;
+  width: 250px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 10px; 
+  border-radius: 10px;
+}
+
+.img2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.img2 {
+  text-align: center;
+}
+
+.profile hr {
+  width: 250px;
+}
+
+.birth {
+  font-size: 18px;
+  color: rgb(76, 83, 90);
+  text-align: center;
 }
 
 .text h1 {
   font-size: 32px;
   margin: 0;
+  text-align: left;
 }
 
 .info {
@@ -54,4 +89,90 @@ body {
 
 .info li {
   margin: 8px 0;
+}
+
+.box2-1 {
+  width: 250px;
+}
+
+.box2-1 h2 {
+  background-color: bisque;
+  border-radius: 20px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+}
+
+.box2-2 {
+  width: 280px;
+}
+
+.box3-1 {
+  width: 250px;
+}
+
+.box3-1 h2 {
+  background-color: bisque;
+  border-radius: 20px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+}
+
+.box3-2 {
+  width: 280px;
+}
+
+.box1 {
+}
+
+.box2 {
+}
+
+.box3 {
+}
+
+.Allbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  padding: 70px 0;
+  gap: 80px;
+}
+
+.box4-1 h2 {
+  background-color: bisque;
+  border-radius: 20px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+}
+
+.box4-2 {
+  width: 280px;
+}
+
+.box5-1 h2 {
+  background-color: bisque;
+  border-radius: 20px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+}
+
+.box5-2 {
+  width: 300px;
+}
+
+.lastment {
+  display: flex;
+  font-style: oblique;
+  text-align: left;
+}
+
+.lastment2 {
+  display: flex;
+  font-style: oblique;
+  text-align: right;
 }
