@@ -9,6 +9,17 @@ body {
     gap: 20px;
 }
 
+.top_header {
+    background-color: darkseagreen;
+    width: 1500px;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+}
+
 img {
     width: 250px;
     margin: 0;
@@ -63,4 +74,11 @@ img {
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
+}
+
+.footer_for_c_contact {
+    width: 500px;
+    height: 80px;
+    font-size: smaller;
+    background-color: darkseagreen;
 }
