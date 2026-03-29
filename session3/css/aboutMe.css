@@ -60,7 +60,8 @@ body {
   height: 350px;
 }
 
-.box h1 { /*박스 제목*/
+.box h2 { /*박스 제목*/
+  font-size: 25px;
   margin-top: 15px;
   margin-left: 30px;
   color: #7fb1d0;
