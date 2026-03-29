@@ -1,6 +1,114 @@
-img {
-  width: 200px;
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
 }
+
+.profile {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+ul {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.song-section {
+  position: relative;
+}
+
+.song-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.playlist-box {
+  position: relative;
+  width: 320px;
+  height: 260px;
+}
+
+.image1 {
+  position: absolute;
+  width: 170px;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  width: 170px;
+  top: 20px;
+  left: 130px;
+}
+
+.row-section {
+  display: flex;
+  gap: 100px;
+}
+
 body {
-  background-color: rgb(255, 237, 240);
+  background-image: url("../img/배경.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.love {
+  position: absolute;
+  top: 10px;
+  right: 500px;
+}
+
+.h1 {
+  font-size: 25px;
+}
+
+.h2 {
+  font-size: 25px;
+}
+
+.love {
+  position: absolute;
+  top: 20px;
+  right: 350px;
+  text-align: center;
+}
+
+.love-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.love-images {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.love h3 {
+  font-size: 50px;
+}
+
+.love-imagesss {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.love-images img {
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.love-imagesss img {
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
