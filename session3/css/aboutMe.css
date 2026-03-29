@@ -11,7 +11,7 @@
 }
 
 body{
-    background-image: url(../img/img_4.jfif);
+    background-image: url(../img/img_4.jpg);
 }
 /*.aside{
     display:flex;
@@ -87,16 +87,6 @@ body{
     height: 300px;
     background-color:rgb(37, 45, 42);
 }
-.down-img2{
-    width: 300px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.782);
-    border: 4px dashed rgba(93, 77, 58, 0.361);
-    margin: 50px;
-    font-family: 'Jua', sans-serif;
-    font-size: 18px;
-    color: rgba(93, 66, 41, 0.93);
-}
 .down-text{
     width: 300px;
     height: 300px;
@@ -106,6 +96,7 @@ body{
     font-family: 'Jua', sans-serif;
     font-size: 18px;
     color: rgba(93, 66, 41, 0.93);
+    padding: 17px;
 }
 .up-text{
     background-color: rgba(255, 255, 255, 0.782);
@@ -113,7 +104,7 @@ body{
     font-size: 18px;
     color: rgba(93, 66, 41, 0.93);
 }
-.up-icon1{
+.up-icons{
     font-family: 'Playwrite DK Uloopet Guides', sans-serif ;
     font-size: 25px;
     color: rgba(240, 248, 255, 0.751);
@@ -121,28 +112,23 @@ body{
     height: 100px;
     border: 4px dashed rgba(93, 77, 58, 0.837);
     margin: 50px;
-    background-image: url(../img/img_6.jfif);
+}
+.up-icon1{
+    background-image: url(../img/img_6.jpg);
     background-size: cover;
 }
 .up-icon2{
-    font-family: 'Playwrite DK Uloopet Guides', sans-serif ;
-    font-size: 25px;
-    color: rgba(240, 248, 255, 0.751);
-    width: 170px;
-    height: 100px;
-    border: 4px dashed rgba(93, 77, 58, 0.837);
-    margin: 50px;
-    background-image: url(../img/img_7.jfif);
+    background-image: url(../img/img_7.jpg);
     background-size: cover;
 }
 .up-icon3{
-    font-family: 'Playwrite DK Uloopet Guides', sans-serif ;
-    font-size: 25px;
-    color: rgba(240, 248, 255, 0.751);
-    width: 170px;
-    height: 100px;
-    border: 4px dashed rgba(93, 77, 58, 0.837);
-    margin: 50px;
-    background-image: url(../img/img_5.jfif);
+    background-image: url(../img/img_5.jpg);
     background-size: cover;
+}
+.upIcon{
+    float: right;
+    width:70px;
+    height: 70px;
+    margin-top: -190px;
+    margin-right: 10px;
 }
