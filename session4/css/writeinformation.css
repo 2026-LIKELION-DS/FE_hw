@@ -407,3 +407,44 @@ input {
   bottom: 15px;
   left: 0.5px;
 }
+
+footer {
+  display: flex;
+  padding: 52px 160px;
+  align-items: flex-start;
+  gap: 86px;
+  align-self: stretch;
+
+  width: 1600px;
+  height: 43px;
+  background-color: #292625;
+}
+
+footer p {
+  color: #d1cfcd;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 15.6px */
+  letter-spacing: -0.36px;
+}
+
+#pp {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 14.56px; /*  */
+  letter-spacing: -0.7px;
+}
+
+.from {
+  display: flex;
+  width: 206px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.sns {
+margin-right: 10px;
+}
