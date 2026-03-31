@@ -76,10 +76,6 @@
 }
 body {
   background-color: #1c1b1a;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: Pretendard;
 }
 
@@ -118,6 +114,10 @@ header {
   line-height: 130%;
   letter-spacing: -0.6px;
   padding: 12px 10px;
+}
+
+.main {
+  flex: 1ß;
 }
 #step2 {
   margin: 0px;
@@ -385,4 +385,25 @@ input {
   aspect-ratio: 1/1;
   border-radius: 16px;
   background-color: #8c827d;
+}
+
+.bar1,
+.bar2 {
+  width: 4px;
+  height: 70px;
+  background-color: #ff7710;
+  margin: 0 auto;
+  position: relative;
+  bottom: 15px;
+  left: 0.5px;
+}
+
+.bar3 {
+  width: 4px;
+  height: 70px;
+  background-color: #8c827d;
+  margin: 0 auto;
+  position: relative;
+  bottom: 15px;
+  left: 0.5px;
 }
