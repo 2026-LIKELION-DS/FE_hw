@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로토타입 실제구현</title>
+    <link rel="stylesheet" href="css/writeinformation.css" />
+  </head>
+
+  <body>
+    <div class="allbox">
+      <header class="headbox">
+        <div class="mobile-header">
+          <div class="header1">
+            <img src="img/icon_arrow_back.svg" /> 서류 지원서 작성
+            <img src="img/icon_menu.svg" />
+          </div>
+          <div class="header2">STEP 2 <span>인적사항 입력</span></div>
+          <div class="header3">
+            <div class="step">
+              <div colorcircle></div>
+              <div colorline></div>
+              <div colorcircle></div>
+              <div line></div>
+              <div circle></div>
+              <div line></div>
+              <div circle></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="desktop-header">
+          <div class="logo">DS.LIKELION</div>
+          <div class="list">
+            <a>멋쟁이 사자처럼</a>
+            <a>공지사항</a>
+            <a>질문하러가기</a>
+            <a>지원하러가기</a>
+            <a>제출여부확인하기</a>
+            <a>합격자 조회</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="main-content">
+        <div class="form-left">
+          <div class="section1">
+            <div class="name">이름</div>
+            <div class="text">이름을 입력해 주세요.</div>
+
+            <div class="name">전화번호</div>
+            <div class="explain">(예: 01012341234)</div>
+            <div class="text">'-' 없이 전화번호를 입력해 주세요.</div>
+
+            <div class="name">메일주소</div>
+            <div class="explain">
+              *입력하신 메일주소로 <span class="pass">합격자 통보</span>가
+              이루어집니다. <span class="pass">정확한 주소</span>를
+              입력해주세요.
+            </div>
+            <div class="text">dslions@duksung.ac.kr</div>
+          </div>
+
+          <div class="section2">
+            <div class="name">학과</div>
+            <div class="explain">
+              - 1학년
+              <p>
+                본인이 속한 단과대 이름을 작성해주세요.(가상현실융합학과,
+                데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)
+              </p>
+              <p>(예: 과학기술대학)</p>
+              <p>- 2학년 이상</p>
+              <p>
+                복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공,2전공)과
+                같이 작성해주세요.
+              </p>
+              <p>(예: 시각디자인전공/문화인류학전공)</p>
+            </div>
+            <div class="text">학과를 작성해 주세요.</div>
+          </div>
+
+          <div class="section3">
+            <div class="name">학번</div>
+            <div class="explain">(예: 20260101)</div>
+            <div class="text">학번을 작성해 주세요.</div>
+
+            <div class="name">학년/재학 여부</div>
+            <div class="explain">
+              2026학년도 1학기 기준으로 작성해 주세요.
+              <p>(예: 3학년/재학)</p>
+              <p>* 휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.</p>
+              <p>예) 2학년 2학기를 마치고 휴학한 경우: 4학기/휴학</p>
+            </div>
+            <div class="text">학년/재학 여부를 작성해 주세요.</div>
+          </div>
+
+          <div class="section4">
+            <div class="name">지원하는 파트</div>
+            <div class="box1">
+              <div class="box1-1">기획/디자인</div>
+              <div class="box1-2">프론트엔드</div>
+              <div class="box1-3">백엔드</div>
+            </div>
+            <div class="box2">다음으로</div>
+          </div>
+        </div>
+
+        <div class="form-right">
+          <div class="step-desktop">
+            <div>개인정보수집안내</div>
+            <div class="active">인적사항 입력</div>
+            <div>지원서 작성</div>
+            <div>제출 완료</div>
+          </div>
+
+          <div class="btn-group">
+            <div class="prev">이전으로</div>
+            <div class="next">다음으로</div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="final">
+          <div class="finalbox1">
+            <p>덕성여대 멋쟁이사자처럼 14기 운영진</p>
+            <p>©2026.likelion_ds all rights reserved.</p>
+          </div>
+          <div class="finalbox2">
+            <img src="img/icon_instagram.svg" />
+            <img src="img/icon_kakaotalk.svg" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

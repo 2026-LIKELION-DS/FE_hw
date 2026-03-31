@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: white;
+}
+
+.allbox {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  background: #000;
+  color: #fff;
+}
+
+.headbox {
+    text-align: center;
+    padding: 20px;
+}
+
+.header1 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header2 span {
+    display: block;
+}
+
+
+
+.name {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.text {
+    background-color: white;
+    color: gray;
+    border-radius: 30px;
+    padding: 12px;
+    width: 100%;
+    margin: 20px 0 20px 0
+}
+
+.explain {
+    color: gray;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.pass {
+    color: orange;
+}
+
+
+
+
+.box1 {
+    display: flex;
+}
+
+.box1-1 {
+    border: 1px solid rgb(203, 132, 0);
+    background-color: rgb(249, 158, 0);
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    margin: 20px 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box1-2 {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    margin: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1-3 {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    margin: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.final {
+    background-color: rgb(49, 47, 47);
+    width: 100%;
+    padding: 28px 24px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finalbox1 {
+    color: darkgray;
+    padding: 0;
+    margin: 0;
+}
+
+.finalbox2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.desktop-header,
+.form-right {
+  display: none;
+}
+
+@media (min-width: 991px) {
+   .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-right {
+    display: block;
+  }
+
+  .box2 {
+    display: none;
+  }
+}
