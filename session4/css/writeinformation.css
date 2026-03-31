@@ -95,9 +95,10 @@ h3 {
 }
 
 .info_div {
+  width: 904px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 40px;
 }
 
@@ -114,7 +115,7 @@ h3 {
   justify-content: center;
 }
 
-.info_div > input {
+.info_div input {
   width: 368px;
   display: flex;
   border-radius: 9999px;
