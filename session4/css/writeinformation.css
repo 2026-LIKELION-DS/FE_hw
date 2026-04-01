@@ -1,0 +1,210 @@
+/* 서류 지원서 작성 바 */
+.top-bar{
+    display: flex;
+    height: 36px;
+    gap: 65px;
+
+}
+/* 제일 큰 박스 */
+.container{
+    background-color: #1C1B1A;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+.top-bar-text{
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+/* .topBox{
+    display: flex;
+    padding: 24px 0;
+    flex-direction: column;
+    align-items: center;
+} */
+.top{
+    display: flex;
+    padding: 24px 0;
+    flex-direction: column;
+    align-items: center;
+    /* align-self: stretch; */
+    gap: 24px;
+}
+.top-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.top-process{
+    width: 256px;
+    height: 16px;
+    display: flex;
+}
+.top-process-dot1{
+    width: 16px;
+    height: 16px;
+    background-color: #FF7710;
+    border-radius: 100%;
+}
+.top-process-dot2{
+    width: 16px;
+    height: 16px;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+}
+.top-progress-line1{
+    width: 64px;
+    height: 4px;
+    background-color: #FF7710;
+    align-self: center;
+
+}
+.top-progress-line2{
+    width: 64px;
+    height: 4px;
+    background-color: #D9D9D9;
+    align-self: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.content-text{
+    color: #FFF;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.48px;
+}
+.content-bar{
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: #FFF;
+    /* 폰트 */
+    color: #8c827d;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+}
+.content-thintext{
+    color: #8c827d;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+.content-bars{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contentBarButton1{
+    
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #FF7710;
+}
+.contentBarButton{
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.contentBarButton1-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.48px;
+}
+.contentBarButton-text{
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.48px;
+}
+.bottomBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.bottom-button{
+    display: flex;
+    width: 342px;
+    height: 56px;
+    padding: 0 99px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 88px;
+    background-color: #FF7710;
+}
+.bottom-button-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    padding: 32px 24px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292625;
+}
+.footer-text{
+    display: flex;
+    width: 206px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.footer-text1{
+    color: #D1CFCD ;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+}
+.footer-text2{
+    color:#D1CFCD ;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 104%;
+    letter-spacing: -0.7px;
+}
