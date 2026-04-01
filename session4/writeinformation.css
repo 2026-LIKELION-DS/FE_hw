@@ -1,0 +1,197 @@
+body {
+  background-color: #1c1b1a;
+  color: #ffffff;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: #ffffff;
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  padding: 80px 20px;
+  gap: 80px;
+}
+
+.form-area {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.form-group label {
+  width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.input-wrapper {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #bdbdbd;
+}
+
+.hint {
+  font-size: 12px;
+  color: #888888;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.hint.warning span {
+  color: #ff7710;
+}
+
+.part-group {
+  align-items: center;
+}
+
+.part-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.part-btn {
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.side-area {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.progress-bar {
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.progress-bar img {
+  width: 100%;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.btn-prev,
+.btn-next {
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-prev {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.btn-next {
+  background-color: #ff7710;
+  color: #ffffff;
+}
+
+.progress-bar img {
+  width: 50px;
+  height: auto;
+}
+
+@media screen and (max-width: 990px) {
+  nav {
+    display: none;
+  }
+  header {
+    padding: 15px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .form-group label {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .part-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .part-btn {
+    width: 100%;
+  }
+
+  .side-area {
+    width: 100%;
+    align-items: center;
+  }
+
+  .progress-bar {
+    margin-bottom: 40px;
+  }
+}
