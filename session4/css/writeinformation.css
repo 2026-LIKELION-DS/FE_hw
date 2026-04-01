@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 390px;
+    flex-direction: column;
+    align-items: center;
+    background: #1C1B1A;
+}
+
+/*모바일*/
+.wrapper {
+    display: flex;
+    width: 390px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*헤더 부분*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    height: 56px;
+    align-self: stretch;
+}
+
+.header h1 {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+    letter-spacing: -0.6px;
+}
+
+.back-btn{
+    border: none;
+    background: none;
+}
+.menu-btn{
+    border: none;
+    background: none;
+}
+
+/*container 부분*/
+.container {
+    display: flex;
+    width: 342px;
+    padding-bottom: 36px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+}
+
+.step-text {
+    align-self: stretch;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.step-title {
+    align-self: stretch;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.step {
+    display: flex;
+    padding: 24px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+/*step_group 부분*/
+.orange_line {
+    width: 80px;
+    height: 4px;
+    background-color: #FF7710;
+}
+
+.gray_line {
+    width: 80px;
+    height: 4px;
+    background: #D9D9D9;
+}
+
+.step_group{
+    width: 256px;
+    height: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.step_line {
+    display: inline-flex;
+}
+
+.steps {
+    display: inline-flex;
+    gap: 64px;
+    position: absolute;
+}
+
+/*input_form 부분*/
+.input_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    align-self: stretch;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-gap-lg, 12px);
+    align-self: stretch;
+}
+
+.input_title{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-gap-xs, 4px);
+    align-self: stretch;
+    color: var(--Neutral-Contrast, #FFF);
+}
+
+.desc {
+    align-self: stretch;
+    color: var(--Neutral-Sub, #8C827D);
+    font-size: var(--font-size-t1, 12px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: var(--line-height-t1, 18px);
+    letter-spacing: -0.36px;
+}
+
+.desc .orange_text{
+    color: var(--Brand, #FF7710);
+}
+
+input {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: var(--radius-rounded, 9999px);
+    background: var(--Neutral-Contrast, #FFF);
+    border: none;
+}
+
+/*파트 선택 부분*/
+.part_button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.part_btn {
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: var(--radius-rounded, 9999px);
+    background: var(--Neutral-Contrast, #FFF);
+    border: none;
+    color: var(--Neutral, #000);
+    text-align: center;
+}
+
+/*선택된 버튼 주황색*/
+.part_btn.active {
+    border-radius: var(--radius-rounded, 9999px);
+    background: var(--Brand, #FF7710);
+    color: var(--Neutral-Contrast, #FFF);
+}
+
+/* 6. 다음으로 버튼 */
+.next-btn {
+    display: flex;
+    width: 342px;
+    height: 56px;
+    padding: 0 99px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 88px;
+    background: var(--Real-Orange-ex5_Primary, #FF7710);
+    box-shadow: 0 0 20px 0 rgba(255, 119, 16, 0.20);
+    color: var(--White, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.6px;
+}
+/*footer 부분*/
+.footer{
+    display: flex;
+    padding: 32px 24px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: var(--Bold-Black-ex9, #292625);
+}
+
+.information {
+    align-self: stretch;
+    display: flex;
+    width: 206px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.text1{
+    color: var(--Bold-Black-ex4, #D1CFCD);
+    font-family: Pretendard;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 15.6px */
+    letter-spacing: -0.36px;
+}
+
+.text2 {
+    color: var(--Bold-Black-ex4, #D1CFCD);
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 104%; /* 14.56px */
+    letter-spacing: -0.7px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* 데스크탑 버전 맛보기 (화면이 991px보다 클 때) */
+@media (min-width: 991px) {
+    .wrapper {
+        max-width: 450px; /* 시안의 모바일 형태를 PC 중앙에 유지 */
+        margin: 0 auto;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+    }
+}
