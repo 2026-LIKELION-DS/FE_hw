@@ -6,12 +6,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
     gap: 20px;
 }
 
 .top_header {
-    background-color: darkseagreen;
-    width: 1500px;
+    background-color: rgb(205, 255, 205);
+    width: 100%;
 
 }
 
@@ -21,19 +22,23 @@ h1 {
 }
 
 img {
-    width: 250px;
+    width: 200px;
     margin: 0;
+    border-radius: 20px;
 }
 
 .main_content_of_introd {
     font-weight: 500;
 }
 
+
+
 .main_big_contents_box {
     display: flex;
     justify-content: space-between;
     justify-content: space-evenly;
     gap: 40px;
+    background-color: rgb(175, 235, 255);
 }
 
 .sidebox {
@@ -55,11 +60,11 @@ img {
     height: 768px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 
-.big_box_for_hobb1{
+.big_box_for_hobb1 {
     display: flex;
     justify-content:space-between;
 }
@@ -76,9 +81,25 @@ img {
     gap: 20px;
 }
 
+dt {
+    font-weight: bold;
+}
+
 .footer_for_c_contact {
-    width: 500px;
-    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+    height: 40px;
     font-size: smaller;
-    background-color: darkseagreen;
+    background-color: rgb(205, 255, 205);
+}
+
+.footer_for_c_contact > p {
+    margin: 0;
+    padding: 0px 15px 0px 0px;
+    font-weight: bold;
+    color:rgb(40, 79, 40)
 }
