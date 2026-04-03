@@ -52,13 +52,16 @@ nav{
     width:32px;
     height:32px;
 }
+.sectionBar{
+    display: none;
+}
 section{
     margin:0;
 }
 .sectionContainer{
     display:flex;
-    justify-content: space-around;
-    align-items: stretch;
+    justify-content:flex-start;
+    align-items: center;
     gap: 20px;
     margin-top: 40px;
     padding: 0 120px;
@@ -66,6 +69,7 @@ section{
 .sectionLeft{
     display:flex;
     flex-direction: column;
+
     width:904px;
     gap:30px;
 }
@@ -84,16 +88,32 @@ section{
     font-size: 20px;
 }
 .sectionContent{
-    
+    /*
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
 }
 
+.rightFunction{
+    display:flex;
+    flex-direction: column;
+    top:80px;
+    right:80px;
+    justify-content: flex-start;
+    position:fixed;
+    gap:20px;
+}
 
 .sectionRight{
     display:flex;
     justify-content: flex-start;
-    padding: 40px 60px;
+
     gap:40px;
 }
+.sectionRSecond_p{
+    margin: 0 0 45px 0;
+}
+
 .sectionR_first{
 }
 .sectionR_second{
@@ -103,7 +123,6 @@ section{
     font-size: 15px;
     width:135px;
     height:30px;
-    font-size:15px;
 }
 
 article{
@@ -113,12 +132,14 @@ article{
 }
 .articleContainer{
     display:flex;
+    align-items: flex-start;
     gap:24px;
     margin:15px 0;
 }
 .article_InputRight{
     padding:16px;
-    font-size:5px;
+    font-size:14px;
+    width:300px;
 }
 .article_InputRight span{
     color:#FF7710;
@@ -133,6 +154,12 @@ article{
 .article_Leftcontainer{
     color:white;
     width:208px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.article_Leftcontainer > p {
+
 }
 
 .article_InputRight{
@@ -150,17 +177,22 @@ article{
 
 article input{
     border-radius: 50px;
-    width:300px;
+    width: 500px;
     padding:16px;
+}
+article input:focus {
+    outline: none;
 }
 
 .article_last{
     display: flex;
+    align-items: center;
 }
 
 .articleLast_buttons{
     display:flex;
     width:670px;
+    justify-content: flex-start;
 }
 .articleButton_first{
     color:white;
@@ -168,6 +200,7 @@ article input{
     border-radius: 50px;
     font-size:15px;
     padding:8px;
+    margin-right: 4px;
     width:150px;
     font-weight: 600;
 }
@@ -176,29 +209,68 @@ article input{
     border-radius: 50px;
     width:150px;
     font-weight: 600;
+    margin-right: 4px;
+}
+.rightFunction{
+    display: flex;
 }
 
+.rightBarBefore{
+    color:rgb(0, 0, 0);
+    background-color: #ffffff;
+    border:0;
+    border-radius: 50px;
+    font-size:15px;
+    padding:8px;
+    margin-right: 4px;
+    width:100%;
+    font-weight: 600;
+}
+.rightBarNext{
+    color:white;
+    background-color: #FF7710;
+    border-radius: 50px;
+    font-size:15px;
+    padding:8px;
+    margin-right: 4px;
+    width:100%;
+    font-weight: 600;
+}
 
 .footerSource{
     width:206px;
-    gap:12px;
+    margin-right:60px;
 }
 .footerContainer1{
     display:none;
+
 }
 
 .footerContainer2{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
-    white-space: nowrap;;
+    white-space: nowrap;
+    margin-top: 70px;
 }
 
+.footerBind{
+    display: flex;
+    justify-content: center;
+}
+.textFooter{
+    color:rgb(199, 199, 199);
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: -3%;
+    gap:20px;
+    margin-top: 0;
+}
 
-.textFooter, .textFooter2{
-    color:white;
-    font-size: 5px;
+.textFooter2{
+    color:rgb(199, 199, 199);
+    font-size: 13px;
     line-height: 130%;
     letter-spacing: -3%;
     gap:20px;
@@ -225,12 +297,60 @@ article input{
     .hamburgerBar{
         display:flex;
     }
+    .sectionBar{
+        display: flex;
+        justify-content: center;
+    }
     nav{
         justify-content: space-between;
         padding: 0 20px;
     }
 
-    //이거 밖에쓰는건지 이 미디어 안에쓰는건지 모르겠다 질문.
+    .articleContainer{
+        flex-direction: column;
+    }
+    .sectionLeft{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionTitle{
+        justify-content: center;
+        text-align: center;
+    }
+    .article_last{
+    align-items: flex-start;
+    }
 
+    .articleLast_buttons{
+        justify-content: flex-end;
+        width:500px;
+    }
+    .articleButton_first{
+        margin-right:3px;
+        padding:10px;
+        width:200px;
+    }
+    .rightButton,.rightdownButton{
+        display: none;
+    }
+    #nextB{
+        width:500px;
+    }
+    .articleButton{
+        margin-right:3px;
+        width:200px;
+    }
+    .footerSource{
+        margin-right: 250px;
+    }
+    .footerContainer1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .footerContainer1 .articleButton_first{
+        width:300px;
+    }
 
 }
