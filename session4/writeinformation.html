@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="writeinformation.css" />
   </head>
   <body>
-    <header>
+    <header class="header-mobile">
+      <button type="button" class="btn-icon">
+        <img src="./img/뒤로가기.svg" alt="뒤로가기" />
+      </button>
+      <h2>서류 지원서 작성</h2>
+      <button type="button" class="btn-icon">
+        <img src="./img/메뉴.svg" alt="메뉴" />
+      </button>
+    </header>
+
+    <header class="header-desktop">
       <div class="logo">
-        <img src="./img/logo.svg" alt="DS.LIKELION 로고" />
+        <img src="./img/logo.png" alt="DS.LIKELION 로고" />
       </div>
       <nav>
         <a href="#">멋쟁이 사자처럼</a>
@@ -26,12 +36,20 @@
         <div class="step-title">
           STEP 2
           <h1>인적사항 입력</h1>
+          <div class="progress-mobile">
+            <img src="./img/진행가로.png" alt="모바일 진행상황" />
+          </div>
         </div>
 
         <div class="form-group">
           <label for="name">이름</label>
           <div class="input-wrapper">
-            <input type="text" id="name" placeholder="이름을 입력해 주세요" />
+            <input
+              type="text"
+              id="name"
+              class="personal-input"
+              placeholder="이름을 입력해 주세요"
+            />
           </div>
         </div>
 
@@ -40,6 +58,7 @@
           <div class="input-wrapper">
             <input
               type="text"
+              class="personal-input"
               placeholder="'-' 없이 전화번호를 입력해 주세요"
             />
             <p class="hint">(예: 01012341234)</p>
@@ -49,7 +68,11 @@
         <div class="form-group">
           <label for="email">메일주소</label>
           <div class="input-wrapper">
-            <input type="email" placeholder="dslions@duksung.ac.kr" />
+            <input
+              type="email"
+              class="personal-input"
+              placeholder="dslions@duksung.ac.kr"
+            />
             <p class="hint warning">
               *입력하신 메일주소로 <span>합격자 통보</span>가 이루어지며,<br /><span
                 >정확한 주소</span
@@ -61,7 +84,11 @@
         <div class="form-group">
           <label for="major">학과</label>
           <div class="input-wrapper">
-            <input type="text" placeholder="학과를 작성해 주세요" />
+            <input
+              type="text"
+              class="personal-input"
+              placeholder="학과를 작성해 주세요"
+            />
             <p class="hint long-hint">
               - 1학년<br />본인이 속한 단과대 이름을 작성해주세요.<br />(가상현실융합학과,
               데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)<br />(예:
@@ -76,7 +103,11 @@
         <div class="form-group">
           <label for="student-id">학번</label>
           <div class="input-wrapper">
-            <input type="text" placeholder="학번을 작성해 주세요" />
+            <input
+              type="text"
+              class="personal-input"
+              placeholder="학번을 작성해 주세요"
+            />
             <p class="hint">(예: 20260101)</p>
           </div>
         </div>
@@ -84,7 +115,11 @@
         <div class="form-group">
           <label for="status">학년/재학 여부</label>
           <div class="input-wrapper">
-            <input type="text" placeholder="학년/재학 여부를 작성해 주세요" />
+            <input
+              type="text"
+              class="personal-input"
+              placeholder="학년/재학 여부를 작성해 주세요"
+            />
             <p class="hint">
               2026학년도 1학기 기준으로 작성해 주세요.<br />(예: 3학년/재학)<br /><br />*
               휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.<br />예) 2학년
@@ -101,11 +136,14 @@
             <button type="button" class="part-btn">백엔드</button>
           </div>
         </div>
+        <div class="action-buttons-mobile">
+          <button type="button" class="btn-next">다음으로</button>
+        </div>
       </section>
 
       <aside class="side-area">
         <div class="progress-bar">
-          <img src="./img/Ellipse 49.svg" alt="진행상황" />
+          <img src="./img/진행세로.png" alt="데스크탑 진행상황" />
         </div>
         <div class="action-buttons">
           <button type="button" class="btn-prev">이전으로</button>
