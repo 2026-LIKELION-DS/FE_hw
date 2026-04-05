@@ -1,9 +1,24 @@
+body{
+    background-color: #1C1B1A;
+}
+.top-bar-icons{
+    display: flex;
+    justify-content: space-between;
+}
 /* 서류 지원서 작성 바 */
 .top-bar{
     display: flex;
-    height: 36px;
-    gap: 65px;
-
+    width: 100%;
+    height: 56px;
+    /* gap: 65px; */
+    justify-content: space-around;
+    align-items: center;
+}
+.icon_arrow_back{
+    cursor: pointer;
+}
+.icon_menu{
+    cursor: pointer;
 }
 /* 제일 큰 박스 */
 .container{
@@ -12,7 +27,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 36px;
 }
 .top-bar-text{
@@ -32,17 +47,25 @@
     display: flex;
     padding: 24px 0;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     /* align-self: stretch; */
     gap: 24px;
+}
+.top-text1{
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    /* font-size: 16px;
+    font-style: normal;
+    font-weight: 500; */
 }
 .top-text{
     color: #FFF;
     text-align: center;
     font-family: Pretendard;
-    font-size: 16px;
+    /* font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500; */
 }
 .top-process{
     width: 256px;
@@ -75,9 +98,10 @@
     align-self: center;
 }
 .content{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     gap: 12px;
+    padding-bottom: 25px;
 }
 .content-text{
     color: #FFF;
@@ -88,19 +112,19 @@
 }
 .content-bar{
     display: flex;
-    padding: 12px;
+    padding: 18px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     align-self: stretch;
-    border-radius: 15px;
+    border-radius: 30px;
     background: #FFF;
     /* 폰트 */
     color: #8c827d;
     font-family: Pretendard;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.42px;
 }
 .content-thintext{
@@ -113,28 +137,39 @@
 }
 .content-bars{
     display: flex;
+    justify-content:left;
     align-items: center;
     gap: 8px;
+    width: 100%;
 }
-.contentBarButton1{
-    
+/* .contentBarButton1{
+    width: 100%;
     display: flex;
     height: 48px;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #FF7710;
-}
+    cursor: pointer;
+    
+} */
 .contentBarButton{
+    width: 100%;
     display: flex;
-    height: 48px;
+    height: 56px;
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    border-radius: 20px;
+    color: #000;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.contentBarButton:hover{
+    background-color: #FF7710;
+    color: #fff;
 }
 .contentBarButton1-text{
-    color: #FFF;
+    
     text-align: center;
     font-family: Pretendard;
     font-size: 16px;
@@ -143,7 +178,7 @@
     letter-spacing: -0.48px;
 }
 .contentBarButton-text{
-    color: #000;
+    /* color: #000; */
     text-align: center;
     font-family: Pretendard;
     font-size: 16px;
@@ -153,20 +188,21 @@
 }
 .bottomBox{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column;
+    align-items: center; */
     gap: 24px;
 }
 .bottom-button{
     display: flex;
-    width: 342px;
-    height: 56px;
+    /* width: 342px;
+    height: 56px; */
     padding: 0 99px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 88px;
     background-color: #FF7710;
+    cursor: pointer;
 }
 .bottom-button-text{
     color: #FFF;
@@ -177,19 +213,19 @@
     font-weight: 600;
 }
 .footer{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     padding: 32px 24px;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     background-color: #292625;
 }
 .footer-text{
     display: flex;
-    width: 206px;
+    /* width: 100%; */
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
 }
 .footer-text1{
     color: #D1CFCD ;
@@ -198,8 +234,10 @@
     font-style: normal;
     font-weight: 500;
     letter-spacing: -0.36px;
+    margin: 0;
 }
 .footer-text2{
+    width: 100%;
     color:#D1CFCD ;
     font-family: Pretendard;
     font-size: 14px;
@@ -207,4 +245,202 @@
     font-weight: 300;
     line-height: 104%;
     letter-spacing: -0.7px;
+    margin: 0;
 }
+.footerIcons{
+    display: flex;
+    gap: 10px;
+}
+.contentBarButton1-text{
+    padding: 10px;
+}
+.contentBarButton-text{
+    padding: 10px;
+}
+.topBar{
+    width: 100%;
+    /* display: flex;
+    justify-content: left; */
+    color: #FFF;
+    display: flex;
+}
+.dsimg{
+    padding: 40px;
+}
+.topBarTxts{
+    display: flex;
+    gap: 70px;
+    padding: 40px;
+    align-items: center;
+    padding-right: 30px;
+}
+@media all and (min-width:990px){
+    .top-bar{
+        display: none;
+    }
+    .top{
+        justify-content: left;
+        align-items: flex-start;
+        padding-left: 150px;
+        width: 100%;
+        margin-top: -400px;
+    }
+    .container{
+        align-items: flex-start;
+        
+    }
+    .contents{
+        padding-left: 70px;
+        margin-top: -200px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        width: 100%;
+        justify-content: flex-start;
+        gap: 100px;
+        padding-left: 150px;
+    }
+    .bottomBox{
+        flex-direction: row-reverse;
+        /* justify-content: space-between; */
+        width: 100%;
+        background-color: #292625;
+    }
+    .bottom-button{
+        display: none;
+    }
+    
+    .top-text{
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        padding-bottom: 70px;
+    }
+    .top-text1{
+        font-size: 16px;
+    }
+    .top-process{
+        display: none;
+    }
+    .top-process2{
+        /* padding-right: 250px; */
+        padding-right: 0px;
+    }
+    .topContainer{
+        display: flex;
+    }
+    .rightBox{
+        width: 100%;
+        justify-self: flex-end;
+        display: flex;
+        justify-content: center;
+        padding-left: 450px;
+    }
+    .top-progress-line3{
+        margin-left: 5px;
+        height: 40px;
+        width: 5px;
+        background-color: #FF7710;
+    }
+    .top-progress-line4{
+        margin-left: 5px;
+        height: 40px;
+        width: 5px;
+        background-color: #D9D9D9;
+    }
+    .rightText{
+        color: #FFF;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .rightText1{
+        padding-bottom: 33px;
+    }
+    .rightText2{
+        padding-bottom: 30px;
+        color: #8c827d;
+    }
+    .rightButtons{
+        width: 100%;
+        /* padding-left: 1220px; */
+        
+        
+    }
+    /* .rightContainer{
+        justify-content: flex-end;
+        align-self: flex-end;
+    } */
+    .rightButton{
+        align-self: flex-start;
+        width: max-content;
+        height: 20px;
+        border-radius: 40px;
+        background-color: #fff;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .rightButton:hover{
+        background-color: #FF7710;
+        color: #FFF;
+    }
+    .rightContainer{
+        width: 140px;
+        justify-self: flex-end;
+        padding-right: 350px;
+    }
+    .topBarTxt{
+        cursor: pointer;
+    }
+}
+@media all and (max-width:990px){
+    .topBar{
+        display: none;
+    }
+    .top{
+        align-items: center;
+    }
+    .container{
+        align-items: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        width: 100%;
+    }
+    .bottomBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-button{
+        width: 342px;
+        height: 56px;
+    }
+    .footer-text{
+        width: 100%;
+    }
+    .top-text{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .top-process2{
+        display: none;
+    }
+    .rightBox{
+        display: none;
+    }
+    .rightButtons{
+        display: none;
+    }
+}   

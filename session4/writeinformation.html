@@ -8,47 +8,101 @@
 </head>
 <body>
     <div class="container">
-        <div class="top-bar">
-            <div class="top-bar-icon1 top-bar-icons">
+        <header class="top-bar">
+            <div class="top-bar-icons top-bar-icon1">
                 <img src="./img/icon_arrow_back.svg" alt="화살표" class="icon_arrow_back">
             </div>
             <div class="top-bar-text">서류 지원서 작성</div>
-            <div class="top-bar-icon2 top-bar-icons">
+            <div class="top-bar-icons top-bar-icon2">
                 <img src="./img/icon_menu.svg" alt="메뉴" class="icon_menu">
+            </div>
+        </header>
+        <header class="topBar">
+            <img src="./img/logo_ds_topbar_burgundy.png" class="dsimg">
+            <div class="topBarTxts">
+                <div class="topBarTxt">멋쟁이 사자처럼</div>
+                <div class="topBarTxt">공지사항</div>
+                <div class="topBarTxt">질문하러가기</div>
+                <div class="topBarTxt">지원하러가기</div>
+                <div class="topBarTxt">제출여부확인하기</div>
+                <div class="topBarTxt">합격자 조회</div>
+            </div>
+        </header>
+        <section class="rightBox">
+            <div class="top-process2">
+                    <div class="top-process-dot1"></div>
+                    <div class="top-progress-line3"></div>
+                    <div class="top-process-dot1"></div>
+                    <div class="top-progress-line4"></div>
+                    <div class="top-process-dot2"></div>
+                    <div class="top-progress-line4"></div>
+                    <div class="top-process-dot2"></div>
+            </div>
+            <div class="rightText">
+                <div class="rightText1">개인정보수집안내</div>
+                <div class="rightText1">인적사항 입력</div>
+                <div class="rightText2">인적사항 입력</div>
+                <div class="rightText2">인적사항 입력</div>
+            </div>
+            <!-- <div class="rightButtons">
+                <div class="rightButton">이전으로</div>
+                <div class="rightButton">다음으로</div>
+            </div> -->
+        </section>
+        <div class="rightButtons">
+            <div class="rightContainer">
+                    <div class="rightButton">이전으로</div>
+                    <div class="rightButton">다음으로</div>
             </div>
         </div>
         <div class="topBox">
-            <div class="top">
-                <!-- text 두개 나눠야 함..클래스 따로 -->
-                <div class="top-text">STEP 2</div>
-                <div class="top-text">인적사항 입력</div>
-                <div class="top-process">
-                    <div class="top-process-dot1"></div>
-                    <div class="top-progress-line1"></div>
-                    <div class="top-process-dot1"></div>
-                    <div class="top-progress-line2"></div>
-                    <div class="top-process-dot2"></div>
-                    <div class="top-progress-line2"></div>
-                    <div class="top-process-dot2"></div>
+            <div class="topContainer">
+                <div class="top">
+                    <!-- text 두개 나눠야 함..클래스 따로 -->
+                    <div class="top-text1">STEP 2</div>
+                    <div class="top-text">인적사항 입력</div>
+                    <div class="top-process">
+                        <div class="top-process-dot1"></div>
+                        <div class="top-progress-line1"></div>
+                        <div class="top-process-dot1"></div>
+                        <div class="top-progress-line2"></div>
+                        <div class="top-process-dot2"></div>
+                        <div class="top-progress-line2"></div>
+                        <div class="top-process-dot2"></div>
+                    </div>
+                    <!-- <div class="top-process2">
+                        <div class="top-process-dot1"></div>
+                        <div class="top-process-dot1"></div>
+                        <div class="top-process-dot2"></div>
+                        <div class="top-process-dot2"></div>
+                    </div> -->
                 </div>
+                <!-- <div class="top-process2">
+                    <div class="top-process-dot1"></div>
+                    <div class="top-process-dot1"></div>
+                    <div class="top-process-dot2"></div>
+                    <div class="top-process-dot2"></div>
+                </div> -->
             </div>
-            <div class="contents">
+            <section class="contents">
                 <div class="content">
                     <div class="content-textBox">
                         <div class="content-text">이름</div>
                     </div>
-                    <div class="content-bar">
+                    <!-- <div class="content-bar">
                         이름을 입력해 주세요
-                    </div>
+                    </div> -->
+                    <input type="text" class="content-bar" placeholder="이름을 입력해 주세요">
                 </div>
                 <div class="content">
                     <div class="content-textBox">
                         <div class="content-text">전화번호</div>
                         <div class="content-thintext">(예: 01012341234)</div>
                     </div>
-                    <div class="content-bar">
+                    <!-- <div class="content-bar">
                         '-'없이 전화번호를 입력해 주세요
-                    </div>
+                    </div> -->
+                    <input type="text" class="content-bar" placeholder="'-'없이 전화번호를 입력해 주세요">
                 </div>
                 <div class="content">
                     <div class="content-textBox">
@@ -58,9 +112,10 @@
                             정확한 주소를 입력해주세요.*
                         </div>
                     </div>
-                    <div class="content-bar">
+                    <!-- <div class="content-bar">
                         dslions@duksung.ac.kr
-                    </div>
+                    </div> -->
+                    <input type="text" class="content-bar" placeholder="dslions@duksung.ac.kr">
                 </div>
                 <div class="content">
                     <div class="content-textBox">
@@ -74,18 +129,20 @@
                             (예: 시각디자인전공/문화인류학전공)
                         </div>
                     </div>
-                    <div class="content-bar">
+                    <!-- <div class="content-bar">
                         학과를 작성해 주세요
-                    </div>
+                    </div> -->
+                    <input type="text" class="content-bar" placeholder="학과를 작성해 주세요">
                 </div>
                 <div class="content">
                     <div class="content-textBox">
                         <div class="content-text">학번</div>
                         <div class="content-thintext">(예: 20260101)</div>
                     </div>
-                    <div class="content-bar">
+                    <!-- <div class="content-bar">
                         학번을 작성해 주세요
-                    </div>
+                    </div> -->
+                    <input type="text" class="content-bar" placeholder="학번을 작성해 주세요">
                 </div>
                 <div class="content">
                     <div class="content-textBox">
@@ -97,16 +154,17 @@
                             예) 2학년 2학기를 마치고 휴학한 경우: 4학기/휴학
                         </div>
                     </div>
-                    <div class="content-bar">
+                    <!-- <div class="content-bar">
                         학년/재학 여부를 작성해 주세요
-                    </div>
+                    </div> -->
+                    <input type="text" class="content-bar" placeholder="학년/재학 여부를 작성해 주세요">
                 </div>
                 <div class="content">
                     <div class="content-textBox">
                         <div class="content-text">지원하는 파트</div>
                     </div>
                     <div class="content-bars">
-                        <div class="contentBarButton1">
+                        <div class="contentBarButton">
                             <div class="contentBarButton1-text">기획/디자인</div>
                         </div>
                         <div class="contentBarButton">
@@ -117,22 +175,25 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="bottomBox">
             <div class="bottom-button">
                 <div class="bottom-button-text">다음으로</div>
             </div>
+            <!-- <div class="bottom-button"></div> -->
             <div class="footer">
                 <div class="footer-text">
                     <p class="footer-text1">덕성여대 멋쟁이사자처럼 14기 운영진</p>
                     <p class="footer-text2">© 2026. likelion_ds all rights reserved.</p>
                 </div>
-                <div class="footer-icon">
-                    <img src="./img/icon_instagram.svg" alt="메뉴" class="icon_menu">
-                </div>
-                <div class="footer-icon">
-                    <img src="./img/icon_kakaotalk.svg" alt="메뉴" class="icon_menu">
+                <div class="footerIcons">
+                    <div class="footer-icon">
+                        <img src="./img/icon_instagram.svg" alt="메뉴" class="icon_menu">
+                    </div>
+                    <div class="footer-icon">
+                        <img src="./img/icon_kakaotalk.svg" alt="메뉴" class="icon_menu">
+                    </div>
                 </div>
             </div>
         </div>
