@@ -1,0 +1,184 @@
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: #1C1B1A;
+    font-family: 'Pretendard', sans-serif;
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+/* 유틸리티 */
+.mobile-only { display: flex; }
+.desktop-nav, .sidebar { display: none; }
+
+/* 레이아웃 */
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 헤더 */
+.header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #292625;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #FF7710;
+    display: none; /* 모바일에선 숨김 (피그마 기준) */
+}
+
+/* 메인 컨테이너 */
+.main-container {
+    width: 100%;
+    max-width: 390px; /* 모바일 기본 너비 */
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    transition: all 0.3s ease;
+}
+
+/* 입력 폼 스타일 */
+.step-header { text-align: center; margin-bottom: 30px; }
+.step-num { color: #FFFFFF; font-size: 14px; margin-bottom: 8px; }
+.step-title { font-size: 24px; font-weight: 700; margin-bottom: 20px; }
+
+.input_form { display: flex; flex-direction: column; gap: 32px; width: 100%; }
+.input_group { display: flex; flex-direction: column; gap: 12px; }
+.input_title { font-weight: 500; }
+.desc { color: #8C827D; font-size: 12px; line-height: 1.5; }
+.orange_text { color: #FF7710; }
+
+input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #FFFFFF;
+}
+
+.part_button { display: flex; gap: 8px; }
+.part_btn {
+    flex: 1;
+    height: 48px;
+    border-radius: 30px;
+    border: none;
+    background: #FFF;
+    cursor: pointer;
+}
+.part_btn.active { background: #FF7710; color: #FFF; }
+
+.next-btn {
+    width: 100%;
+    height: 56px;
+    background: #FF7710;
+    color: #FFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* 푸터 */
+.footer { width: 100%; background: #292625; padding: 40px 0; margin-top: 60px; }
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* [데스크탑 반응형 - 991px 이상] */
+@media screen and (min-width: 991px) {
+    .mobile-only { display: none !important; }
+    .desktop-nav, .sidebar, .logo { display: block; }
+    
+    .header { height: 80px; }
+    .logo { display: block; font-size: 20px; }
+    
+    .desktop-nav ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        font-size: 14px;
+    }
+    .gray-text { color: #8C827D; }
+
+    .main-container {
+        max-width: 1100px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px 0;
+        align-items: flex-start;
+    }
+
+    .form-area { flex: 1; max-width: 600px; }
+    .step-header { text-align: left; }
+
+    /* 사이드바 고정 기능 */
+    .sidebar {
+        width: 300px;
+        position: sticky;
+        top: 120px; /* 헤더 높이 + 여백 */
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .side-steps ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-left: 2px solid #444;
+        padding-left: 20px;
+    }
+
+    .side-steps li { color: #8C827D; position: relative; }
+    .side-steps li.active { color: #FF7710; font-weight: bold; }
+    .side-steps li.active::before {
+        content: '';
+        position: absolute;
+        left: -26px; top: 5px;
+        width: 10px; height: 10px;
+        background: #FF7710;
+        border-radius: 50%;
+    }
+
+    .side-btns { display: flex; flex-direction: column; gap: 12px; }
+    .side-btn {
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .side-btn.white { background: #FFF; color: #000; }
+    .side-btn.orange { background: #FF7710; color: #FFF; }
+}

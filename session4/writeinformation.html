@@ -1,6 +1,6 @@
 <!-- 과제1. 프로토타입 실제구현 (DS.LIKELION 웹사이트)-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,101 +9,220 @@
 </head>
 <body>
     <div class="wrapper">
-    <header class="header">
-        <button class="back-btn"><img src="./img/back.svg" alt="뒤로가기"/></button>
-        <h1 class="title">서류 지원서 작성</h1>
-        <button class="menu-btn"><img src="./img/icon_menu.svg"/></button>
-    </header>
+        <!-- 모바일 헤더 -->
+        <header class="mobile_header">
+            <button class="mobile_back_btn"><img src="./img/back.svg" alt="뒤로가기"/></button>
+            <h1 class="mobile_title">서류 지원서 작성</h1>
+            <button class="mobile_menu_btn"><img src="./img/icon_menu.svg" alt="메뉴"/></button>
+        </header>
 
-    <main class="container">
-        <section class="step">
-            <div class="step_text_title">
-                <p class="step-text">STEP 2</p>
-                <h2 class="step-title">인적사항 입력</h2>
-            </div>
-            <div class="step_group">
-                <div class="step_line">
-                    <div class="orange_line"></div>
-                    <div class="gray_line"></div>
-                    <div class="gray_line"></div>
-                </div>
-                <div class="steps">
-                    <img src="./img/circle_orange.svg" alt="step1">
-                    <img src="./img/circle_orange.svg" alt="step2">
-                    <img src="./img/circle_gray.svg" alt="step3">
-                    <img src="./img/circle_gray.svg" alt="step4">
-                </div>
-            </div>
-        </section>
+        <!-- 데스크탑 헤더 -->
+        <header class="desktop_header">
+            <img class="desktop_logo" src="../session4/img/logo_ds_topbar_burgundy.png" alt="DS.LIKELION 로고"/>
+            <nav class="desktop_menu">
+                <ul>
+                    <li>멋쟁이사자처럼</li>
+                    <li>공지사항</li>
+                    <li>질문하러가기</li>
+                    <li>지원하러가기</li>
+                    <li>제출여부확인하기</li>
+                    <li>합격자 조회</li>
+                </ul>
+            </nav>
+        </header>
 
-        <form class="input_form">
-            <div class="input_group">
-                <label class="input_title">이름</label>
-                <input type="text" id="name" placeholder="이름을 입력해 주세요"/>
-            </div>
-
-            <div class="input_group">
-                <div class="input_text">
-                    <label class="input_title">전화번호</label>
-                    <p class="desc">(예: 01012341234)</p>
+        <main class="container">
+            <!-- 모바일 step -->
+            <section class="mobile_step">
+                <div class="step_text_title">
+                    <p class="step_text">STEP 2</p>
+                    <h2 class="step_title">인적사항 입력</h2>
                 </div>
-                <input type="text" id="phone" placeholder="'-'없이 전화번호를 입력해 주세요"/>
-            </div>
-
-            <div class="input_group">
-                <div class="input_text">
-                    <label class="input_title">메일주소</label>
-                    <p class="desc">*입력하신 메일주소로 <span class="orange_text">합격자 통보</span>가 이루어집니다.
-                        <br><span class="orange_text">정확한 주소</span>를 입력해주세요.</p>
+                <div class="m_step_group">
+                    <div class="step_line">
+                        <div class="orange_line"></div>
+                        <div class="gray_line"></div>
+                        <div class="gray_line"></div>
+                    </div>
+                    <div class="steps">
+                        <img src="./img/circle_orange.svg" alt="step1"/>
+                        <img src="./img/circle_orange.svg" alt="step2"/>
+                        <img src="./img/circle_gray.svg" alt="step3"/>
+                        <img src="./img/circle_gray.svg" alt="step4"/>
+                    </div>
                 </div>
-                <input type="text" id="mail" placeholder="dslions@duksung.ac.kr"/>
+            </section>
+            <!-- 모바일 화면 본문 -->
+            <div class="mobile_text_area">
+                <form class="input_form">
+                    <div class="desktop_step_title">
+                        <p class="step_text">STEP 2</p>
+                        <h2 class="step_title">인적사항 입력</h2>
+                    </div>
+                    <div class="input_group">
+                        <label for="name" class="input_title">이름</label>
+                        <input id="name" type="text" placeholder="이름을 입력해 주세요"/>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_text">
+                            <label class="input_title">전화번호</label>
+                            <p class="desc">(예: 01012341234)</p>
+                        </div>
+                        <input type="text" id="phone" placeholder="'-'없이 전화번호를 입력해 주세요"/>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_text">
+                            <label class="input_title">메일주소</label>
+                            <p class="desc">*입력하신 메일주소로 <span class="orange_text">합격자 통보</span>가 이루어집니다.
+                                <br><span class="orange_text">정확한 주소</span>를 입력해주세요.</p>
+                        </div>
+                        <input type="text" id="mail" placeholder="dslions@duksung.ac.kr"/>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_text">
+                            <label class="input_title">학과</label>
+                            <p class="desc">- 1학년<br>
+                                본인이 속한 단과대 이름을 작성해주세요. (가상현실융합학과, 데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)
+                                <br>(예: 과학기술대학)<br><br>
+                                - 2학년 이상<br>
+                                복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공, 2전공)과 같이 작성해주세요.
+                                <br>(예: 시각디자인전공/문화인류학전공)
+                            </p>
+                        </div>
+                        <input type="text" id="Department" placeholder="학과를 작성해 주세요"/>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_text">
+                            <label class="input_title">학번</label>
+                            <p class="desc">(예: 20260101)</p>
+                        </div>
+                        <input type="text" id="school_num" placeholder="학번을 작성해 주세요"/>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_text">
+                            <label class="input_title">학년/재학 여부</label>
+                            <p class="desc">2026학년도 1학기 기준으로 작성해 주세요.<br>
+                                (예: 3학년/재학)<br><br>
+                                * 휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.<br>
+                                예) 2학년 2학기를 마치고 휴학한 경우 : 4학기/휴학
+                            </p>
+                        </div>
+                        <input type="text" id="grade" placeholder="학년/재학 여부를 작성해 주세요"/>
+                    </div>
+                    <div class="input_group">
+                        <label class="input_title">지원하는 파트</label>
+                        <div class="part_button">
+                            <button type="button" class="part_btn active">기획/디자인</button>
+                            <button type="button" class="part_btn">프론트엔드</button>
+                            <button type="button" class="part_btn">백엔드</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="next_btn">다음으로</button>
+                </form>
             </div>
+            <!-- ----------데스크탑 본문 화면--------------- -->
+            <div class="desktop_text_area">
+                <form class="input_form">
+                    <div class="desktop_step_title">
+                        <p class="step_text">STEP 2</p>
+                        <h2 class="step_title">인적사항 입력</h2>
+                    </div>
+                    <div class="input_group">
+                        <label for="name" class="input_title">이름</label>
+                        <div class="input_text">
+                            <input id="name" type="text" placeholder="이름을 입력해 주세요"/>
+                        </div>
+                    </div>
 
-            <div class="input_group">
-                <div class="input_text">
-                    <label class="input_title">학과</label>
-                    <p class="desc">- 1학년<br>
-                        본인이 속한 단과대 이름을 작성해주세요. (가상현실융합학과, 데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)
-                        <br>(예: 과학기술대학)<br><br>
-                        - 2학년 이상<br>
-                        복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공, 2전공)과 같이 작성해주세요.
-                        <br>(예: 시각디자인전공/문화인류학전공)
-                    </p>
-                </div>
-                <input type="text" id="Department" placeholder="학과를 작성해 주세요"/>
+                    <div class="input_group">
+                        <label class="input_title">전화번호</label>
+                        <div class="input_text">
+                            <input type="text" id="phone" placeholder="'-'없이 전화번호를 입력해 주세요"/>
+                            <p class="desc">(예: 01012341234)</p>
+                        </div>
+                    </div>
+
+                    <div class="input_group">
+                        <label class="input_title">메일주소</label>
+                        <div class="input_text">
+                            <input type="text" id="mail" placeholder="dslions@duksung.ac.kr"/>
+                            <p class="desc">*입력하신 메일주소로 <span class="orange_text">합격자 통보</span>가 이루어집니다.
+                                <br><span class="orange_text">정확한 주소</span>를 입력해주세요.</p>
+                        </div>
+                    </div>
+
+                    <div class="input_group">
+                        <label class="input_title">학과</label>
+                        <div class="input_text">
+                            <input type="text" id="Department" placeholder="학과를 작성해 주세요"/>
+                            <p class="desc">- 1학년<br>
+                                본인이 속한 단과대 이름을 작성해주세요. (가상현실융합학과, 데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)
+                                <br>(예: 과학기술대학)<br><br>
+                                - 2학년 이상<br>
+                                복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공, 2전공)과 같이 작성해주세요.
+                                <br>(예: 시각디자인전공/문화인류학전공)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="input_group">
+                        <label class="input_title">학번</label>
+                        <div class="input_text">
+                            <input type="text" id="school_num" placeholder="학번을 작성해 주세요"/>
+                            <p class="desc">(예: 20260101)</p>
+                        </div>
+                    </div>
+
+                    <div class="input_group">
+                        <label class="input_title">학년/재학 여부</label>
+                        <div class="input_text">
+                            <input type="text" id="grade" placeholder="학년/재학 여부를 작성해 주세요"/>
+                            <p class="desc">2026학년도 1학기 기준으로 작성해 주세요.<br>
+                                (예: 3학년/재학)<br><br>
+                                * 휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.<br>
+                                예) 2학년 2학기를 마치고 휴학한 경우 : 4학기/휴학
+                            </p>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <label class="input_title">지원하는 파트</label>
+                        <div class="part_button">
+                            <button type="button" class="part_btn active">기획/디자인</button>
+                            <button type="button" class="part_btn">프론트엔드</button>
+                            <button type="button" class="part_btn">백엔드</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- 데스크탑 진행상황 사이드바 -->
+                <aside class="sidebar">
+                    <nav class="d_step_group">
+                        <div class="d_step_line_dot">
+                            <div class="step_line">
+                                <div class="orange_line"></div>
+                                <div class="gray_line"></div>
+                                <div class="gray_line"></div>
+                            </div>
+                            <div class="steps">
+                                <img src="./img/circle_orange.svg" alt="step1"/>
+                                <img src="./img/circle_orange.svg" alt="step2"/>
+                                <img src="./img/circle_gray.svg" alt="step3"/>
+                                <img src="./img/circle_gray.svg" alt="step4"/>
+                            </div>
+                        </div>
+                        <ul class="d_step_text">
+                            <li>개인정보수집안내</li>
+                            <li>인적사항 입력</li>
+                            <li class="gray_text">인적사항 입력</li>
+                            <li class="gray_text">인적사항 입력</li>
+                        </ul>
+                    </nav>
+                    <div class="side_btns">
+                        <button type="button" class="back_btn">이전으로</button>
+                        <button type="button" class="d_next_btn">다음으로</button>
+                    </div>
+                </aside>
             </div>
-
-            <div class="input_group">
-                <div class="input_text">
-                    <label class="input_title">학번</label>
-                    <p class="desc">(예: 20260101)</p>
-                </div>
-                <input type="text" id="school_num" placeholder="학번을 작성해 주세요"/>
-            </div>
-
-            <div class="input_group">
-                <div class="input_text">
-                    <label class="input_title">학년/재학 여부</label>
-                    <p class="desc">2026학년도 1학기 기준으로 작성해 주세요.<br>
-                        (예: 3학년/재학)<br><br>
-                        * 휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.<br>
-                        예) 2학년 2학기를 마치고 휴학한 경우 : 4학기/휴학
-                    </p>
-                </div>
-                <input type="text" id="grade" placeholder="학년/재학 여부를 작성해 주세요"/>
-            </div>
-
-            <div class="input_group">
-                <label class="input_title">지원하는 파트</label>
-                <div class="part_button">
-                    <button type="button" class="part_btn active">기획/디자인</button>
-                    <button type="button" class="part_btn">프론트엔드</button>
-                    <button type="button" class="part_btn">백엔드</button>
-                </div>
-            </div>  
-        </form>
-        <button type="submit" class="next-btn">다음으로</button>
-    </main>
+        </main>
 
     <footer class="footer">
         <div class="information">
@@ -114,7 +233,6 @@
             <img src="./img/icon_instagram.svg" alt="인스타그램" class="insta"/>
             <img src="./img/icon_kakaotalk.svg" alt="카카오톡"/>
         </div>
-        
     </footer>
 </div>
 </body>

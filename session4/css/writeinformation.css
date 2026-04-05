@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    width: 390px;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     background: #1C1B1A;
@@ -15,13 +15,13 @@ body {
 /*모바일*/
 .wrapper {
     display: flex;
-    width: 390px;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
 
-/*헤더 부분*/
-.header {
+/* 모바일 헤더 부분*/
+.mobile_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,20 +30,19 @@ body {
     align-self: stretch;
 }
 
-.header h1 {
-    color: var(--White, #FFF);
+.mobile_title {
+    color:#FFFFFF;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
     line-height: 130%; /* 26px */
     letter-spacing: -0.6px;
 }
-
-.back-btn{
+.mobile_back_btn{
     border: none;
     background: none;
 }
-.menu-btn{
+.mobile_menu_btn{
     border: none;
     background: none;
 }
@@ -58,19 +57,17 @@ body {
     gap: 36px;
 }
 
-.step-text {
-    align-self: stretch;
+.step_text {
     text-align: center;
     color: #FFFFFF;
 }
 
-.step-title {
-    align-self: stretch;
+.step_title {
     text-align: center;
     color: #FFFFFF;
 }
 
-.step {
+.mobile_step {
     display: flex;
     padding: 24px 0;
     flex-direction: column;
@@ -92,7 +89,7 @@ body {
     background: #D9D9D9;
 }
 
-.step_group{
+.m_step_group{
     width: 256px;
     height: 16px;
     position: relative;
@@ -134,23 +131,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--spacing-gap-xs, 4px);
+    gap: 4px;
     align-self: stretch;
-    color: var(--Neutral-Contrast, #FFF);
 }
 
 .desc {
     align-self: stretch;
-    color: var(--Neutral-Sub, #8C827D);
-    font-size: var(--font-size-t1, 12px);
+    color:#8C827D;
+    font-size: 12px;
     font-style: normal;
     font-weight: 300;
-    line-height: var(--line-height-t1, 18px);
+    line-height: 18px;
     letter-spacing: -0.36px;
 }
 
 .desc .orange_text{
-    color: var(--Brand, #FF7710);
+    color:#FF7710;
 }
 
 input {
@@ -160,8 +156,8 @@ input {
     align-items: flex-start;
     gap: 16px;
     align-self: stretch;
-    border-radius: var(--radius-rounded, 9999px);
-    background: var(--Neutral-Contrast, #FFF);
+    border-radius: 9999px;
+    background: #FFFFFF;
     border: none;
 }
 
@@ -179,22 +175,22 @@ input {
     justify-content: center;
     align-items: center;
     flex: 1 0 0;
-    border-radius: var(--radius-rounded, 9999px);
-    background: var(--Neutral-Contrast, #FFF);
+    border-radius: 9999px;
+    background:#FFF;
     border: none;
-    color: var(--Neutral, #000);
+    color: #000000;
     text-align: center;
 }
 
 /*선택된 버튼 주황색*/
 .part_btn.active {
-    border-radius: var(--radius-rounded, 9999px);
-    background: var(--Brand, #FF7710);
-    color: var(--Neutral-Contrast, #FFF);
+    border-radius: 9999px;
+    background: #FF7710;
+    color: #FFFFFF;
 }
 
 /* 6. 다음으로 버튼 */
-.next-btn {
+.next_btn {
     display: flex;
     width: 342px;
     height: 56px;
@@ -203,15 +199,13 @@ input {
     align-items: center;
     gap: 10px;
     border-radius: 88px;
-    background: var(--Real-Orange-ex5_Primary, #FF7710);
-    box-shadow: 0 0 20px 0 rgba(255, 119, 16, 0.20);
-    color: var(--White, #FFF);
+    background:#FF7710;
+    color:#FFFFFF;
     text-align: center;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -0.6px;
 }
 /*footer 부분*/
 .footer{
@@ -220,7 +214,7 @@ input {
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    background: var(--Bold-Black-ex9, #292625);
+    background: #292625;
 }
 
 .information {
@@ -233,22 +227,22 @@ input {
 }
 
 .text1{
-    color: var(--Bold-Black-ex4, #D1CFCD);
+    color:#D1CFCD;
     font-family: Pretendard;
     font-size: 10px;
     font-style: normal;
     font-weight: 600;
-    line-height: 130%; /* 15.6px */
+    line-height: 130%;
     letter-spacing: -0.36px;
 }
 
 .text2 {
-    color: var(--Bold-Black-ex4, #D1CFCD);
+    color:#D1CFCD;
     font-family: Pretendard;
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
-    line-height: 104%; /* 14.56px */
+    line-height: 104%;
     letter-spacing: -0.7px;
 }
 
@@ -258,12 +252,205 @@ input {
     gap: 12px;
 }
 
-/* 데스크탑 버전 맛보기 (화면이 991px보다 클 때) */
+.desktop_logo, 
+.desktop_menu, 
+.desktop-form-title,
+.desktop_header,
+.desktop_sidebar,
+.desktop_step_title,
+.desktop_text_area { 
+    display: none; 
+}
+
+/* 데스크탑 (990px 초과) */
 @media (min-width: 991px) {
-    .wrapper {
-        max-width: 450px; /* 시안의 모바일 형태를 PC 중앙에 유지 */
+    .mobile_back_btn,
+    .mobile_title,
+    .mobile_menu_btn,
+    .mobile_step,
+    .mobile_header,
+    .input_form > .next-btn,
+    .mobile_text_area { 
+        display: none; 
+    }
+
+    .desktop_logo, 
+    .desktop_menu, 
+    .desktop-form-title,
+    .desktop_header,
+    .desktop_sidebar,
+    .desktop_step_title,
+    .desktop_text_area { 
+        display: flex; 
+    }
+
+    .desktop_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8%;
+        background: #1C1B1A;
+    }
+
+    .desktop_logo {
+        display: flex;
+        padding: 0 80px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .desktop_menu ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 1200px;
         margin: 0 auto;
-        border-left: 1px solid #333;
-        border-right: 1px solid #333;
+        display: block;
+    }
+
+    .desktop_text_area{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 60px;
+        width: 100%;
+    }
+
+    
+    /* aside 부분*/
+    .sidebar {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 60px;
+    }
+
+    .d_step_line_dot{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        height: 240px;
+        margin: 0;
+    }
+
+    .d_step_group{
+        display: flex;
+    }
+
+    .step_line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orange_line, .gray_line {
+        width: 2px;
+        flex: 1;
+    }
+
+    .orange_line { 
+        background-color: #FF7710; 
+    }
+    .gray_line { 
+        background-color: #D9D9D9; 
+    }
+
+    .steps {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        gap: 55px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .d_step_text {
+        margin-left: 10px;
+        list-style: none;
+        color: #FFFFFF;
+    }
+    .d_step_text li{
+        margin-bottom: 50px;
+    }
+
+    .gray_text{
+        color: #8C827D;
+    }
+
+    .back_btn,
+    .d_next_btn {
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        margin-top: 20px;
+    }
+
+    .back_btn {
+        background: #FFFFFF; 
+        color: #000000; 
+    }
+    .d_next_btn {
+        background: #FF7710;
+        color: #FFFFFF; 
+    }
+    
+    .input_form{
+        width: 900px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+    }
+
+    .desktop_step_title{
+        margin: 40px 0 120px 0;
+        display: inline;
+    }
+
+    .step_text{
+        text-align: left;
+    }
+
+    .input_group {
+        width: 100%;
+        display: flex;
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 60px;
+        margin-bottom: 40px;
+    }
+    
+    .input_title {
+        width: 200px;
+    }
+
+    .input_text {
+        width: 400px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desc {
+        margin-top: 8px;
+        font-size: 12px;
+        color: #A8A4A2;
+    }
+    .part_button {
+        width: 100%;
     }
 }
