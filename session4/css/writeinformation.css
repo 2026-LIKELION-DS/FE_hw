@@ -10,165 +10,329 @@ body {
 
 .allbox {
   width: 100%;
-  max-width: 390px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 20px 40px;
   background: #000;
   color: #fff;
 }
 
 .headbox {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .header1 {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header2 span {
-    display: block;
+  display: block;
 }
 
-
-
 .name {
-    padding: 10px;
-    font-size: 18px;
+  padding: 20px;
+  font-size: 18px;
 }
 
 .text {
-    background-color: white;
-    color: gray;
-    border-radius: 30px;
-    padding: 12px;
-    width: 100%;
-    margin: 20px 0 20px 0
+  background-color: white;
+  color: gray;
+  border-radius: 30px;
+  padding: 12px;
+  width: 100%;
+  margin: 20px 0 20px 0;
 }
 
 .explain {
-    color: gray;
-    padding: 12px;
-    font-size: 15px;
+  color: gray;
+  padding: 12px;
+  font-size: 15px;
 }
 
 .pass {
-    color: orange;
+  color: orange;
 }
 
-
-
-
 .box1 {
-    display: flex;
+  display: flex;
 }
 
 .box1-1 {
-    border: 1px solid rgb(203, 132, 0);
-    background-color: rgb(249, 158, 0);
-    color: white;
-    border-radius: 30px;
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-    margin: 20px 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  border: 1px solid rgb(203, 132, 0);
+  background-color: rgb(249, 158, 0);
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin: 20px 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box1-2 {
-    background-color: white;
-    color: black;
-    border-radius: 30px;
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-    margin: 20px 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin: 20px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box1-3 {
-    background-color: white;
-    color: black;
-    border-radius: 30px;
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-    margin: 20px 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin: 20px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box2 {
-    background-color: orange;
-    color: white;
-    border-radius: 30px;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  background-color: orange;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .final {
-    background-color: rgb(49, 47, 47);
-    width: 100%;
-    padding: 28px 24px;
-    margin-top: 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(49, 47, 47);
+  width: 100%;
+  padding: 28px 24px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .finalbox1 {
-    color: darkgray;
-    padding: 0;
-    margin: 0;
+  color: darkgray;
+  padding: 0;
+  margin: 0;
 }
 
 .finalbox2 {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
+.desktop-header img {
+  display: none;
+  width: 200px;
+}
 
-.desktop-header,
-.form-right {
+.desktop-header {
   display: none;
 }
 
-@media (min-width: 991px) {
-   .mobile-header {
+.form-right {
     display: none;
+}
+
+.desktop-king {
+    display: none;
+}
+
+@media (min-width: 991px) {
+
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header img {
+    display: flex;
+  }
+
+  .headbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .desktop-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+  }
+
+  .desktop-header2 {
+    font-size: 13px;
+  }
+
+  .desktop-header3 {
+    font-size: 30px;
+  }
+
+  .desktop-king {
+    display: block;
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+
+
+  .list {
+    display: flex;
+    gap: 50px;
   }
 
   .main-content {
     display: flex;
     justify-content: space-between;
+    padding-left: 200px;
   }
 
-  .form-right {
-    display: block;
-  }
+  .brother {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+ .form-right {
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+ }
+
+ .box1 {
+    width: 600px;
+ }
 
   .box2 {
     display: none;
   }
+   
+  .sections,
+  .section2,
+  .section3,
+  .section3-1,
+  .section4 {
+    display: flex;
+    align-items: flex-start;   
+  }
+
+  .sections,
+  .section2,
+  .section3,
+  .section3-1,
+  .section4 {
+    gap: 100px;
+  }
+
+  .sections2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+ .name {
+    width: 110px;
+ }
+
+  .text {
+    width: 450px;
+  }
+
+  .step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.step-left {
+  width: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff8a00;
+}
+
+.line {
+  width: 2px;
+  height: 28px;
+  background: #ff8a00;
+  margin-top: 2px;
+}
+
+.step-text {
+  color: white;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-top: 0;
+}
+
+.gray {
+  background: #8a8a8a;
+}
+
+.gray-text {
+  color: #8a8a8a;
+}
+
+.last .line {
+  display: none;
+}
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .prev {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .next {
+    border: 1px solid rgb(247, 142, 6);
+    background-color: rgb(247, 142, 6);
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+
+
+
 }
