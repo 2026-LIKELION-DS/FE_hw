@@ -1,0 +1,173 @@
+* {
+    background-color: black;
+    color: #fff;
+}
+
+.pcBody {
+    justify-content: space-evenly;
+}
+
+.pcHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pcHeader img {
+    margin-left: 40px;
+}
+
+.pcHeaderList {
+    justify-content: center;
+
+    margin-right: 260px;
+}
+
+.pcHeaderList a {
+    margin: 0px 40px;
+}
+
+.pcInputHeader {
+    font-weight: bold;
+}
+
+.pcInputHeader > h2 {
+    font-size: 50px;
+    margin: 5px 0px;
+}
+
+.pcInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pcName, .pcPhoneNum, .pcEmailAdd, .pcDept, .pcBbun, .pcAttend, .pcPart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pcInput > p {
+    align-items: baseline;
+}
+
+.boxFortext {
+    align-items: baseline;
+}
+
+.boxFortext p {
+    margin: 0px;
+}
+
+.bigBox {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.boxForpart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxFortext p {
+    font-size: 10px;
+}
+
+.planAndDesign {
+    background-color: #ff7710;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.FrontEnd, .BackEnd {
+    background-color: #fff;
+    color: black;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.pcAside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.step1, .step2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pcStepBtn {
+    align-items: center;
+    padding: 20px;
+}
+
+.goBack {
+    padding: 10px;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 20px;
+
+    color: black;
+}
+
+.nextStep {
+    padding: 10px;
+    width: 320px;
+    background-color: #ff7710;
+    border-radius: 20px;
+
+    color: #fff;
+}
+
+.goBack, .nextStep {
+    justify-content: center;
+}
+
+.pcFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    padding: 30px;
+}
+
+.pcFooterPic {
+    margin: 10px;
+}
+
+.phoneHeader, .box, .phoneFooter {
+    display: none;
+}
+
+@media all and (min-width: 479px){
+    body{
+    .phoneHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.phoneOnGoing {
+    display: flex;
+    flex-direction: row;
+}
+
+.phonefooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    }
+}

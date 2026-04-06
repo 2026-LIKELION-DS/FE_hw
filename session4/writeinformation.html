@@ -1,94 +1,252 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DS.LIKELION</title>
-        <link rel="stylesheet" href="../session4/css/writeinformation.css" />
-    </head>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone - DS.LIKELION</title>
+    <link rel="stylesheet" href="css/writeinformation.css" />
+</head>
+<body>
+    <div class="pcBody">
+        <header class="pcHeader">
+            <img src="img/logo_ds_topbar_burgundy.svg" alt="덕멋 로고"/>
 
-    <body>
-        <header>
-            <div class="header_for_pc">
-            <div class="logo">
-                <img src="./img/logo.png"/>
-            </div>
-
-            <div class="header_function_list">
-                <a>멋쟁이 사자처럼</a>
+            <div class="pcHeaderList">
+                <a>멋쟁이사자처럼</a>
                 <a>공지사항</a>
                 <a>질문하러가기</a>
                 <a>지원하러가기</a>
                 <a>제출여부확인하기</a>
-                <a>합격자 조회</a>
+                <a>합격자조회</a>
             </div>
-
-            <div>
-                <div class="header_for_mobile">
-                    <img src="../session4/img/icon_arrow_back.svg" />
-                    <p>서류 지원서 작성</p>
-                    <img src="../session4/img/icon_menu.svg" />
-                </div>
         </header>
-
-        <section class="main">
-            <div class="left">
-                <section class="section_1">
-                    <p class="step2">STEP 2</p>
-                    <p>인적사항 입력</p>
-                </section>
-
-                <section class="section_info">
-                    <div class="info_div">
+        <div class="bigBox">
+            <section class="pcSection">
+                <header class="pcInputHeader">
+                    <p>STEP 2</p>
+                    <h2>인적사항 입력</h2>
+                </header>
+                
+                <div class="pcInput">
+                    <div class="pcName">
                         <p>이름</p>
-                        <input id="name" type="text" value="이름을 입력해 주세요." />
+                        <input class="pcNameInput" type="text" placeholder="이름을 입력해 주세요"/>
                     </div>
 
-            <div class="phone_num">
-                <p>전화번호</p>
+                    <div class="pcPhoneNum">
+                        <p>전화번호</p>
+                        <div class="boxFortext">
+                            <input class="pcPhoneNumInput" type="text" placeholder="'-'없이 전화번호를 입력해 주세요"/>
+                            <p>(예: 01012341234)</p>
+                        </div>
+                    </div>
+
+                    <div class="pcEmailAdd">
+                        <p>메일주소</p>
+                        <div class="boxFortext">
+                            <input class="pcEmailAddInput" type="text" placeholder="dslion@duksung.ac.kr"/>
+                            <p>
+                                *입력하신 메일주소로 합격자 통보가 이루어집니다.<br>
+                                정확한 주소를 입력해주세요.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pcDept">
+                        <p>학과</p>
+                        <div class="boxFortext">
+                            <input class="pcDeptInput" type="text" placeholder="학과를 작성해 주세요"/>
+                            <p>
+                                - 1학년<br>
+                                본인이 속한 단과대 이름을 작성해주세요.<br>
+                                (가상현실융합학과, 데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)<br>
+                                (예: 과학기술대학)<br><br>
+                                - 2학년<br>
+                                복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공, 2전공)과<br>
+                                같이 작성해주세요.<br>                        (예: 시각디자인전공/문화인류학전공)
+                            </p>
+                        </div>
+                    </div>
+                        
+                    <div class="pcBbun">
+                        <p>학번</p>
+                        <div class="boxFortext">
+                            <input class="pcBbunInput" type="text" placeholder="학번을 작성해 주세요"/>
+                            <p>
+                                (예: 20260101)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pcAttend">
+                        <p>학년/재학 여부</p>
+                        <div class="boxFortext">
+                            <input class="pcAttendInput" type="text" placeholder="학년/재학 여부를 작성해 주세요"/>
+                            <p>
+                                2026학년도 1학기 기준으로 작성해 주세요.<br>
+                                (예: 3학년/재학)<br><br>
+                                *휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.<br>
+                                예) 2학년 2학기를 마치고 휴학한 경우: 4학기/휴학
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pcPart">
+                        <p>지원하는 파트</p>
+
+                        <div class="boxForpart">
+                            <div class="planAndDesign">기획/디자인</div>
+                            <div class="FrontEnd">프론트엔드</div>
+                            <div class="BackEnd">백엔드</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="pcAside">
+                <div class="pcOnGoing">
+                    <div class="step1">
+                        <img src="img/Ellipse.svg" alt="단계"/>
+                        <p>개인정보수집안내</p>
+                    </div>
+
+                    <div class="step2">
+                        <img src="img/Ellipse.svg" alt="단계"/>
+                        <p>인적사항 입력</p>
+                    </div>
+
+                    <div class="step2">
+                        <img src="img/Ellipse.svg" alt="단계"/>
+                        <p>인적사항 입력</p>
+                    </div>
+
+                    <div class="step2">
+                        <img src="img/Ellipse.svg" alt="단계"/>
+                        <p>인적사항 입력</p>
+                    </div>
+                </div>
+
+                <div class="pcStepBtn">
+                    <div class="goBack">이전으로</div>
+                    <div class="nextStep">다음으로</div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer class="pcFooter">
+        <div class="pcFooterText">
+            <p>덕성여대 멋쟁이사자처럼 14기 운영진</p>
+            <p>© 2026. likelion_ds all rights reserved.</p>
+        </div>
+        <div class="pcFooterPic">
+            <img src="img/icon_instagram.svg" alt="인스타"/>
+            <img src="img/icon_kakaotalk.svg" alt="카카오톡"/>
+        </div>
+    </footer>
+
+
+
+    <header class="phoneHeader">
+        <img src="img/icon_arrow_back.svg" alt="전단계로"/>
+        <p>서류 지원서 작성</p>
+        <img src="img/icon_menu.svg" alt="햄버거바"/>
+    </header>
+
+    <div class="box">
+        <section class="phoneSection">
+            <header class="phoneInputHeader">
+                <p>STEP 2</p>
+                <p>인적사항 입력</p>
+            </header>
+
+            <div class="phoneOnGoing">
+                <div class="step1">
+                    <img src="img/Ellipse.svg" alt="단계"/>
+                </div>
+
+                <div class="step1">
+                    <img src="img/Ellipse.svg" alt="단계"/>
+                </div>
+
+                <div class="step2">
+                    <img src="img/Ellipse.svg" alt="단계"/>
+                </div>
+
+                <div class="step2">
+                    <img src="img/Ellipse.svg" alt="단계"/>
+                </div>
             </div>
 
-            <div>
-                <input class="tel_num"> ‘-’ 없이 전화번호를 입력해 주세요 </input>
-                <p class="exof_tel_num">(예: 01012341234)</p>
-            </div>
+            <div class="phoneInput">
+                <div class="phoneName">
+                    <p>이름</p>
+                    <input class="phoneNameInput" type="text" placeholder="이름을 입력해 주세요"/>
+                </div>
 
-            <div>
-                <div class="email_add">
-                    <p>메일주소</p>
-                </div>div>
+                <div class="phonePhoneNum">
+                    <p>전화번호</p>
+                    <p>(예: 01012341234)</p>
+                    <input class="phonephoneNumInput" type="text" placeholder="'-'없이 전화번호를 입력해 주세요."/>
+                </div>
 
-                <input class="exacr_email_add">dslions@duksung.ac.kr</input>
-                <p class="ex">
-                *입력하신 메일주소로 합격자 통보가 이루어집니다.<br>
-                정확한 주소를 입력해주세요.
-                </p>
-            </div>
-            </div>
+                <div class="phoneEmailAdd">
+                    <p>메일 주소</p>
+                    <p>*입력하신 메일주소로 합격자 통보가 이루어집니다.<br>정확한 주소를 입력해주세요.</p>
+                    <input class="phoneEmailAddInput" type="text" placeholder="dslions@duksung.ac.kr"/>
+                </div>
 
-            <div class="major_info">
-                <p>학과</p>
-
-                <div>
-                    <input class="major"> 학과를 작성해 주세요 </input>
+                <div class="phoneDept">
                     <p>
                         - 1학년<br>
-                        본인이 속한 단과대 이름을 작성해주세요.<br>(가상현실융합학과,
-                        데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)<br>
+                        본인이 속한 단과대 이름을 작성해주세요.<br>
+                        (가상현실융합학과, 데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)<br>
                         (예: 과학기술대학)<br><br>
-                        - 2학년 이상<br>
-                        복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공,
-                        2전공)과같이 작성해주세요.<br>
-                        (예: 시각디자인전공/문화인류학전공)
+                        - 2학년<br>
+                        복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공, 2전공)과<br>
+                        같이 작성해주세요.<br>                        (예: 시각디자인전공/문화인류학전공)
                     </p>
+                    <input class="phonePhoneDeptInput" type="text" placeholder="학과를 작성해 주세요"/>
                 </div>
-            </div>
 
-
-            <div class="what_is_your_bbun">
-                <p>학번</p>
-                <div>
-                    <input class="student_num"> 학번을 작성해 주세요.</input>
+                <div class="phoneBbun">
+                    <p>학번</p>
                     <p>(예: 20260101)</p>
+                    <input class="phoneBbunInput" type="text" placeholder="학번을 입력해 주세요"/>
+                </div>
+
+                <div class="phoneAttend">
+                    <p>학년/재학 여부</p>
+                    <p>
+                        2026학년도 1학기 기준으로 작성해 주세요.<br>
+                        (예: 3학년/재학)<br><br>
+                        *휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.<br>
+                        예) 2학년 2학기를 마치고 휴학한 경우: 4학기/휴학
+                    </p>
+                    <input class="phoneAttendInput" type="text" placeholder="학년/재학 여부를 작성해 주세요"/>
+                </div>
+
+                <div class="phonePart">
+                    <p>지원하는 파트</p>
+
+                    <div class="boxForpart">
+                        <div class="planAndDesign">기획/디자인</div>
+                        <div class="FrontEnd">프론트엔드</div>
+                        <div class="BackEnd">백엔드</div>
+                    </div>
                 </div>
             </div>
+        </section>
+    </div>
+
+    <footer class="phoneFooter">
+        <div class="phoneFooterText">
+            <p>덕성여대 멋쟁이사자처럼 14기 운영진</p>
+            <p>© 2026. likelion_ds all rights reserved.</p>
+        </div>
+        <div class="phoneFooterPic">
+            <img src="img/icon_instagram.svg" alt="인스타"/>
+            <img src="img/icon_kakaotalk.svg" alt="카카오톡"/>
+        </div>
+    </footer>
+</body>
+</html>
