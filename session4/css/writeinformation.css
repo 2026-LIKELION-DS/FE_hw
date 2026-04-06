@@ -11,6 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 20px;
 }
 
 .pcHeader img {
@@ -27,8 +29,13 @@
     margin: 0px 40px;
 }
 
+.pcSection {
+    width: 60%;
+}
+
 .pcInputHeader {
     font-weight: bold;
+    margin: 0px 0px 40px 0px;
 }
 
 .pcInputHeader > h2 {
@@ -40,16 +47,31 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    width: 700px;
 }
 
 .pcName, .pcPhoneNum, .pcEmailAdd, .pcDept, .pcBbun, .pcAttend, .pcPart {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin: 10px;
+
 }
 
 .pcInput > p {
     align-items: baseline;
+}
+
+.pcNameInput, .pcPhoneNumInput, .pcEmailAddInput, .pcDeptInput, .pcBbunInput, .pcAttendInput {
+    background-color: #fff;
+    border-radius: 20px;
+
+    width: 300px;
+    height: 30px;
+
+    margin: 5px;
 }
 
 .boxFortext {
@@ -57,14 +79,17 @@
 }
 
 .boxFortext p {
-    margin: 0px;
+    margin: 3px;
 }
 
 .bigBox {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0px 0px 0px 80px;
 }
 
 .boxForpart {
@@ -72,6 +97,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    width: 312px;
 }
 
 .boxFortext p {
@@ -82,14 +109,24 @@
     background-color: #ff7710;
     color: #fff;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 15px;
+    justify-content: center;
+
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .FrontEnd, .BackEnd {
     background-color: #fff;
     color: black;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 15px;
+    justify-content: center;
+    
+    width: 100px;
+    height: 30px;
+    margin: 0px 10px;
 }
 
 .pcAside {
@@ -99,6 +136,7 @@
     align-items: center;
 
     padding: 40px;
+    margin-right: 300px;
 }
 
 .step1, .step2 {
@@ -115,7 +153,7 @@
 
 .goBack {
     padding: 10px;
-    width: 320px;
+    width: 200px;
     background-color: #fff;
     border-radius: 20px;
 
@@ -124,7 +162,7 @@
 
 .nextStep {
     padding: 10px;
-    width: 320px;
+    width: 200px;
     background-color: #ff7710;
     border-radius: 20px;
 
@@ -147,27 +185,105 @@
     margin: 10px;
 }
 
-.phoneHeader, .box, .phoneFooter {
-    display: none;
+.phoneBody {
+    width: 100%;
+    height: auto;
 }
 
-@media all and (min-width: 479px){
-    body{
-    .phoneHeader {
+.phoneHeader {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.phoneOnGoing {
+.phoneInput {
+    height: auto;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
-.phonefooter {
+.phoneInputHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.phoneInputHeader > p {
+    margin: 0px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.phoneOnGoing {
+    margin: 30px;
+    margin-left: 450px;
+    width: 40%;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
+
+.phoneNameInput, .phonephoneNumInput, .phoneEmailAddInput, .phoneDeptInput, .phoneBbunInput, .phoneAttendInput {
+    background-color: #fff;
+    border-radius: 20px;
+
+    width: 400px;
+    height: 50px;
+}
+
+.phoneName, .phonephoneNum, .phoneEmailAdd, .phoneDept, .phoneBbun, .phoneAttend {
+    justify-content: center;
+
+    margin: 10px;
+}
+
+.phoneDept {
+    margin-left: 90px;
+}
+
+.planAndDesign, .FrontEnd, .BackEnd {
+    height: 40px;
+    width: 100px;
+}
+
+.phoneFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+    .phoneBody {
+        display: none !important;
+    }
+    .pcBody {
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pcBody {
+        display: none !important; 
+    }
+    .phoneBody {
+        display: block; 
+    }
+    
+    .phoneOnGoing {
+        margin-left: 0;
+        width: 100%;
+    }
+    .phoneNameInput, .phonephoneNumInput, .phoneEmailAddInput, 
+    .phoneDeptInput, .phoneBbunInput, .phoneAttendInput {
+        width: 90%;
     }
 }
