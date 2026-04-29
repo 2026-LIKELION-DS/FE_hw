@@ -7,9 +7,6 @@ function updateTimer() {
     const closeTime = new Date();
     closeTime.setHours(23, 0, 0, 0);
 
-    const statusMsg = document.querySelector('.description');
-    const timerDisplay = document.querySelector('.timer');
-
     let diff; 
 
     if (now < openTime) {
@@ -18,7 +15,7 @@ function updateTimer() {
         statusMsg.innerText = "금일 오픈까지 남은 시간:";
         timerDisplay.innerText = formatTime(diff);
     } 
-    else if (now >= openTime && now < closeTime) {
+    else if (now < closeTime) {
         // 2. 운영 중
         diff = closeTime - now;
         statusMsg.innerText = "금일 마감까지 남은 시간:";
@@ -31,6 +28,8 @@ function updateTimer() {
     }
 }
 
+const statusMsg = document.querySelector('.description');
+const timerDisplay = document.querySelector('.timer');
 
 function formatTime(ms) {
     let h = Math.floor((ms / (1000 * 60 * 60)) % 24);
