@@ -101,8 +101,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-start;
+    width: 320px;
 
     border-radius: 30px;
     padding: 5px;
@@ -124,7 +124,7 @@
     align-items: center;
 
     width: 100px;
-    height: 30px;
+    height: 20px;
     margin-right: 10px;
 }
 
@@ -140,7 +140,7 @@
     align-items: center;
     
     width: 100px;
-    height: 30px;
+    height: 20px;
     margin: 0px 10px;
 }
 
