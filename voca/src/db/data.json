@@ -1,0 +1,229 @@
+{
+  "days": [
+    {
+      "id": "1",
+      "day": 1
+    },
+    {
+      "id": "2",
+      "day": 2
+    },
+    {
+      "id": "3",
+      "day": 3
+    },
+    {
+      "id": "4",
+      "day": 4
+    },
+    {
+      "id": "5",
+      "day": 5
+    },
+    {
+      "id": "6",
+      "day": 6
+    },
+    {
+      "id": "7",
+      "day": 7
+    },
+    {
+      "day": 8,
+      "id": "Bg8GZxp1NGI"
+    },
+    {
+      "day": 9,
+      "id": "icSDdidx4DY"
+    },
+    {
+      "day": 10,
+      "id": "qDaY99XUjlA"
+    }
+  ],
+  "words": [
+    {
+      "id": "1",
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "isDone": false
+    },
+    {
+      "id": "2",
+      "day": 1,
+      "eng": "computer",
+      "kor": "컴퓨터",
+      "isDone": false
+    },
+    {
+      "id": "3",
+      "day": 2,
+      "eng": "cat",
+      "kor": "고양이",
+      "isDone": false
+    },
+    {
+      "id": "4",
+      "day": 2,
+      "eng": "dog",
+      "kor": "강아지",
+      "isDone": false
+    },
+    {
+      "id": "5",
+      "day": 3,
+      "eng": "school",
+      "kor": "학교",
+      "isDone": false
+    },
+    {
+      "id": "6",
+      "day": 3,
+      "eng": "pencil",
+      "kor": "연필",
+      "isDone": false
+    },
+    {
+      "id": "7",
+      "day": 4,
+      "eng": "house",
+      "kor": "집",
+      "isDone": false
+    },
+    {
+      "id": "8",
+      "day": 4,
+      "eng": "window",
+      "kor": "창문",
+      "isDone": false
+    },
+    {
+      "id": "9",
+      "day": 5,
+      "eng": "water",
+      "kor": "물",
+      "isDone": false
+    },
+    {
+      "id": "10",
+      "day": 5,
+      "eng": "milk",
+      "kor": "우유",
+      "isDone": false
+    },
+    {
+      "id": "11",
+      "day": 6,
+      "eng": "car",
+      "kor": "자동차",
+      "isDone": false
+    },
+    {
+      "id": "12",
+      "day": 6,
+      "eng": "bus",
+      "kor": "버스",
+      "isDone": false
+    },
+    {
+      "id": "13",
+      "day": 7,
+      "eng": "sun",
+      "kor": "해",
+      "isDone": false
+    },
+    {
+      "id": "14",
+      "day": 7,
+      "eng": "moon",
+      "kor": "달",
+      "isDone": false
+    },
+    {
+      "day": "1",
+      "eng": "word11",
+      "kor": "단어11",
+      "isDone": false,
+      "id": "lJaVgeuFK5g"
+    },
+    {
+      "day": "7",
+      "eng": "asd",
+      "kor": "ㅁㄴㅇ",
+      "isDone": false,
+      "id": "P-45mEobU7k"
+    },
+    {
+      "day": "7",
+      "eng": "rrr",
+      "kor": "ㅁㄹㄹ",
+      "isDone": false,
+      "id": "k5wOQCB5QC4"
+    },
+    {
+      "day": "1",
+      "eng": "qq",
+      "kor": "ㅂㅂ",
+      "isDone": false,
+      "id": "tQNtep53Ug8"
+    },
+    {
+      "day": "1",
+      "eng": "qq",
+      "kor": "ㅁ",
+      "isDone": false,
+      "id": "x8rsgqtmSmQ"
+    },
+    {
+      "day": "1",
+      "eng": "asdf",
+      "kor": "ㅁㄴㅇㄹ",
+      "isDone": false,
+      "id": "23nEEofUTGY"
+    },
+    {
+      "day": "1",
+      "eng": "qwer",
+      "kor": "ㅂㅈㄷㄱ",
+      "isDone": false,
+      "id": "MhR31BeOsLc"
+    },
+    {
+      "day": "2",
+      "eng": "rr",
+      "kor": "ㄱㄱ",
+      "isDone": false,
+      "id": "oCC2dnoDN9k"
+    },
+    {
+      "day": "1",
+      "eng": "",
+      "kor": "",
+      "isDone": false,
+      "id": "1W2YSNXNQhc"
+    },
+    {
+      "day": 1,
+      "eng": "jjj",
+      "kor": "ㅓㅓㅓ",
+      "isDone": false,
+      "id": "oE9F9foJfB4"
+    },
+    {
+      "day": 2,
+      "eng": "kjkj",
+      "kor": "ㅏㅓㅏㅓ",
+      "isDone": true,
+      "id": "QNJsJRgqnVo"
+    },
+    {
+      "day": 1,
+      "eng": "q",
+      "kor": "ㅂ",
+      "isDone": false,
+      "id": "_TyTSyAHzQc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
