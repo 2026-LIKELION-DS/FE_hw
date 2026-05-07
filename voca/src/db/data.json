@@ -31,16 +31,13 @@
     {
       "day": 8,
       "id": "Tfef_somYzE"
+    },
+    {
+      "day": 9,
+      "id": "QTvjFipnp70"
     }
   ],
   "words": [
-    {
-      "id": "1",
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": false
-    },
     {
       "id": "2",
       "day": 1,
@@ -166,6 +163,13 @@
       "kor": "",
       "isDone": false,
       "id": "DCNSVfKh-nc"
+    },
+    {
+      "day": 1,
+      "eng": "",
+      "kor": "",
+      "isDone": false,
+      "id": "gYvKO7o8VGk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -20,6 +20,10 @@ function MainPage() {
                 onClickItem={(item) => navigate(`/post/${item.id}`)} 
             />
         </div>
+
+        
     );
+
+    
 }
 export default MainPage;

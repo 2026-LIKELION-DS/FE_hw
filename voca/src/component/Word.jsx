@@ -14,7 +14,7 @@ export default function Word({ word : initialWord }) {
     }
 
     function toggleDone() {
-        fetch(`http://loclahost:3001/words/${word.id}`, {
+        fetch(`http://localhost:3001/words/${word.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type" : "application/json",

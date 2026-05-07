@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 
 export default function CreateWord() {
   const days = useFetch("http://localhost:3001/days");
-  const navigate = useNavigate;
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
   function onSubmit(e) {
@@ -23,7 +23,7 @@ export default function CreateWord() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        day,
+        day: Number(dayRef.current.value),
         eng,
         kor,
         isDone: false,

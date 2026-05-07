@@ -8,19 +8,37 @@ import data from "../../db/data.json";
 function PostViewPage() {
     const navigate = useNavigate();
     const { postId } = useParams(); 
+    
+    const [isShow, setIsShow] = useState("");
+    const [isDone, setIsDone] = useState("");
 
 
     const post = data.posts.find((item) => {
-        return item.id == postId;
+        return item.id === postId;
     });
 
     const [comment, setComment] = useState("");
 
+    fetch(`http://localhost:3001/posts`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type" : "application/json",
+            },
+            body: JSON.stringify({
+                isDone: !isDone,
+            }),
+        }).then((res) => {
+            if(res.ok) {
+                setIsDone((prev) => !prev);
+            }
+        });
+    
+    
     return (
         <div style={{ padding: "16px", display: "flex", flexDirection: "column", gap: "20px" }}>
-            
-            <Button title="뒤로 가기" onClick={() => navigate("/")} style={{ width:"50px" }}/>
-
+            <div style={{ width:"70px" }}>
+                <Button title="뒤로 가기" onClick={() => navigate("/")} />
+            </div>
             
             <div style={{ padding: "16px", border: "2px solid lightgrey", borderRadius: "8px" }}>
                 <h2 style={{ fontSize: "24px", fontWeight: "bold" }}>{post.title}</h2>
@@ -55,6 +73,8 @@ function PostViewPage() {
             </div>
         </div>
     );
+
+    
 }
 
 export default PostViewPage;
