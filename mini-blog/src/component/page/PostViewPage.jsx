@@ -10,7 +10,7 @@ function PostViewPage() {
     const { postId } = useParams(); 
 
 
-    const post = data.find((item) => {
+    const post = data.posts.find((item) => {
         return item.id == postId;
     });
 
@@ -19,10 +19,10 @@ function PostViewPage() {
     return (
         <div style={{ padding: "16px", display: "flex", flexDirection: "column", gap: "20px" }}>
             
-            <Button title="뒤로 가기" onClick={() => navigate("/")} />
+            <Button title="뒤로 가기" onClick={() => navigate("/")} style={{ width:"50px" }}/>
 
             
-            <div style={{ padding: "16px", border: "1px solid grey", borderRadius: "8px" }}>
+            <div style={{ padding: "16px", border: "2px solid lightgrey", borderRadius: "8px" }}>
                 <h2 style={{ fontSize: "24px", fontWeight: "bold" }}>{post.title}</h2>
                 <p style={{ fontSize: "18px", lineHeight: "1.6", whiteSpace: "pre-wrap" }}>
                     {post.content}
@@ -43,7 +43,7 @@ function PostViewPage() {
                     onChange={(event) => setComment(event.target.value)}
                     placeholder="댓글을 입력하세요..."
                 />
-                <div style={{ marginTop: "10px", textAlign: "right" }}>
+                <div style={{ marginTop: "10px", textAlign: "right"}}>
                     <Button
                         title="댓글 작성하기"
                         onClick={() => {
