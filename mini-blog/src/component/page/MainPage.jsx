@@ -1,6 +1,9 @@
 import {Link} from 'react-router-dom'
-import dummy from "../../db/data.json";
 import styled from 'styled-components';
+
+
+// import {Link, useParams} from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Wrapper = styled.div`
     display:flex;
@@ -12,6 +15,7 @@ const TextForm = styled.button`
     padding:5px;
     border-radius:10px;
     border:none;
+    cursor:pointer;
 `;
 const TitleDiv = styled.div`
     border:1px solid black;
@@ -27,9 +31,17 @@ const LinkStyle = styled(Link)`
 `;
 
 function DummyData(){
+
+    const [posts, setPosts] = useState([]);
+    useEffect(()=>{
+        fetch("http://localhost:3001/posts")
+        .then((res)=>res.json())
+        .then((data)=>setPosts(data));
+    }, []);
+
     return(
         <div>
-        {dummy.posts.map((post)=>(
+        {posts.map((post)=>(
             <LinkStyle to = {`/post/${post.id}`} key={post.id}>
             <TitleDiv>{post.title}</TitleDiv>
             </LinkStyle>

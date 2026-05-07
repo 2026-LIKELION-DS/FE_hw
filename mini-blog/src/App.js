@@ -17,10 +17,7 @@ function App() {
         <Route path ="/PostWritePage" element={<PostWritePage />} />
         <Route path ="/post/:id" element={<PostViewPage />} />
         
-        {/* <Route path ="/" element={} />
-        <Route path ="/" element={} />
-        <Route path ="/" element={} />
-        <Route path ="/" element={} />  */}
+
 
       </Routes>
     </div>
