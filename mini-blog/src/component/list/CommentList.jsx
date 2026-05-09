@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import {useState} from "react";
 import { useEffect, useRef } from "react";
 
+
 const DummyContainer1 = styled.div`
     border:1px solid black;
     padding: 10px;
@@ -49,7 +50,7 @@ const CommentButton = styled.button`
     cursor:pointer;
 `;
 export default function CommentList() {
-const { id } = useParams();
+    const { id } = useParams();
 
     const commentRef = useRef();
     const [posts, setPosts] = useState([]);

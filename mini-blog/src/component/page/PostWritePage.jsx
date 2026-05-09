@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom'
 import React from 'react'
 import styled from 'styled-components';
 import { useRef } from "react";
+import Button from "../ui/Button";
 
 const TextareaDiv = styled.div`
     display:flex;
