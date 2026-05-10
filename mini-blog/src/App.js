@@ -16,11 +16,9 @@ function App() {
         <Route path ="/" element={<MainPage />} />
         <Route path ="/PostWritePage" element={<PostWritePage />} />
         <Route path ="/post/:id" element={<PostViewPage />} />
+        <Route path ="/CommentList" element={<CommentList />} />
         
-        {/* <Route path ="/" element={} />
-        <Route path ="/" element={} />
-        <Route path ="/" element={} />
-        <Route path ="/" element={} />  */}
+
 
       </Routes>
     </div>
