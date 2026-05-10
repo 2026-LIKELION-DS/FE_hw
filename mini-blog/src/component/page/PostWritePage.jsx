@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import TextInput from "../ui/TextInput";
 import Button from "../ui/Button";
+import styled from "styled-components";
+
+const TextUI = styled.h2`
+  margin: auto;
+  width: 15%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+`
 
 function PostWritePage() {
   const navigate = useNavigate();
@@ -20,12 +28,14 @@ function PostWritePage() {
       body: JSON.stringify({
         title: title,
         content: content,
-        comment: [],
+        comments: [],
       }),
     })
       .then((res) => {
         if (res.ok) {
           // setIsDone((prev) => !prev);
+          navigate('/');
+          alert("글 작성되었습니다!")
         }
       })
       .finally(() => {
@@ -42,7 +52,7 @@ function PostWritePage() {
         gap: "10px",
       }}
     >
-      <h2>글 작성하기</h2>
+      <TextUI>소플의 미니 블로그</TextUI>
 
       <TextInput
         value={title}

@@ -4,9 +4,14 @@ import PostList from "../list/PostList";
 import Button from "../ui/Button";
 import data from "../../db/data.json"; 
 // import styled from "styled-components";
+// import styled from "styled-components";
 
 // const Wrapper = styled.div`
 // `
+
+// const Wrapper = styled.div`
+//     display:flex;
+// `;
 
 function MainPage() {
     const navigate = useNavigate();

@@ -1,10 +1,24 @@
 import React from "react";
+import styled from "styled-components";
+
+const CommentUI = styled.div`
+    padding: 8px 16px; 
+    border: 2px solid lightgrey; 
+    border-radius: 8px;
+    // margin:  auto;
+    width: 95%;
+`
+
+const CommentText =styled.p`
+    fontSize: 16px;
+    margin: 0;
+`
 
 function CommentListItem({ comment }) {
     return (
-        <div style={{ padding: "8px 16px", border: "2px solid lightgrey", borderRadius: "8px" }}>
-            <p style={{ fontSize: "16px", margin: "0" }}>{comment.content}</p>
-        </div>
+        <CommentUI>
+            <CommentText>{comment.content}</CommentText>
+        </CommentUI>
     );
 }
 

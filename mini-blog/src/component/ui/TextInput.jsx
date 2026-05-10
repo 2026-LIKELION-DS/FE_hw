@@ -1,23 +1,48 @@
 import React from "react";
+import styled from "styled-components";
+
+const TextUI = styled.textarea`
+    padding: 8px;
+    font-size: 16px;           
+    width: 96%;     
+    display: block;       
+    // margin: 0 auto;      
+    outline: none;
+`
+
+const Wrapper = styled.div`
+    // margin: auto;
+    align-self: center;
+`
+const TextareaUI = styled.textarea`
+    height: 300px;
+    padding: 8px;
+    fontSize: 16px; 
+    display: block;       
+    // margin: 0 auto;      
+    outline: none;
+    width: 96%;
+    font-size: 16px;    
+`
 
 function TextInput({ value, onChange, placeholder, multiLine }) {
     
     return (
-        <div style={{ width: "100%", marginTop: "8px" }}>
+        <div>
             {multiLine ? (
-                <textarea
-                    style={{ width: "100%", height: "150px", padding: "8px", fontSize: "16px" }}
+                <TextareaUI
+                    
                     value={value}
                     onChange={onChange}
                     placeholder={placeholder}
                 />
             ) : (
-                <input
-                    style={{ width: "100%", padding: "8px", fontSize: "16px" }}
+                <Wrapper><TextUI
+                    
                     value={value}
                     onChange={onChange}
                     placeholder={placeholder}
-                />
+                /></Wrapper>
             )}
         </div>
     );
