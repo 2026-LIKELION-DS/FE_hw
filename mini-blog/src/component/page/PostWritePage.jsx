@@ -1,57 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
+import Button from '../ui/Button';
+import TextInput from "../ui/TextInput";
 
-const Wrapper = styled.div`
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
-
-const Container = styled.div`
-    width: 100%;
-    max-width: 720px;
-`;
-
-function PostWritePage(props) {
+export default function PostWritePage(props) {
     const navigate = useNavigate();
 
+    const [title, addTitle] = useState("");
+    const [content, addContent] = useState("");
+
+    const PostSubmit = () => {
+        if (title.trim() === "" || content.trim() === "") return;
+
+        const newPost = {
+            title: title,
+            content: content,
+            comments: []
+        };
+
+        fetch("http://localhost:3001/posts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newPost),
+        })
+
+        alert("생성이 완료되었습니다!");
+        navigate("/");
+    };
+
     return (
-        <Wrapper>
-            <Container>
-                <h2>소플의 미니 블로그</h2>
+        <div className="wrapper">
+            <div className="container">
+                <h1>소플의 미니 블로그</h1>
                 
-                <input 
-                    type="text" 
+                <TextInput className="text_input"
+                    height="50px" 
+                    value={title} 
+                    onChange={(e) => addTitle(e.target.value)} 
                     placeholder="제목을 입력하세요" 
-                    style={{ width: "100%", marginBottom: "10px", padding: "8px" }} 
                 />
                 
-                <textarea 
+                <TextInput className="text_input"
+                    height="400px" 
+                    value={content} 
+                    onChange={(e) => addContent(e.target.value)} 
                     placeholder="내용을 입력하세요" 
-                    style={{ width: "100%", height: "200px", padding: "8px" }} 
                 />
 
-                <div style={{ marginTop: "16px", display: "flex", gap: "10px" }}>
-                    <button
-                        onClick={() => {
-                            navigate("/post-write");
-                        }}
-                        style={{
-                            padding: "5px 20px",
-                            fontSize: "16px",
-                            cursor: "pointer",
-                            border: "none",
-                            backgroundColor: "#ddd"
-                        }}
-                    >
-                        글 작성하기
-                    </button>
-                </div>
-            </Container>
-        </Wrapper>
+                <Button title="글 작성하기" onClick={ PostSubmit } />
+            </div>
+        </div>
     );
 }
-
-export default PostWritePage;

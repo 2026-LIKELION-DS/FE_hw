@@ -1,99 +1,57 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import styled from "styled-components";
 import data from "../../db/data.json";
+import Button from '../ui/Button';
+import CommentList from "../list/CommentList";
+import TextInput from "../ui/TextInput";
 
-const Wrapper = styled.div`
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
+export default function PostViewPage(props) {
+  const navigate = useNavigate();
+  const { postId } = useParams();
 
-const Container = styled.div`
-    width: 100%;
-    max-width: 720px;
-`;
+  const post = data.posts.find((item) => {
+    return item.id === postId;
+  });
 
-const PostContainer = styled.div`
-    padding: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-`;
+  const [comments, setComments] = useState(post.comments);
+  const [newComment, setNewComment] = useState("");
 
-const TitleText = styled.p`
-    font-size: 20px;
-    font-weight: bold;
-`;
+  const addComment = () => {
+    if (newComment.trim() === "") return;
 
-const ContentText = styled.p`
-    font-size: 13px;
-    line-height: 1.6;
-`;
+    const newId =
+      comments.length > 0 ? comments[comments.length - 1].id + 1 : 1;
+    const commentsAdded = {
+      id: newId,
+      content: newComment,
+    };
+    setComments([...comments, commentsAdded]);
+    setNewComment("");
+  };
 
-const CommentLabel = styled.p`
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 24px;
-`;
+  return (
+    <div className="wrapper">
+      <div className="container">
+        <Button title="뒤로가기" onClick={() => { navigate("/");}}/>
 
-const CommentContainer = styled.div`
-    margin-top: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-`;
+        <div className="post_container">
+          <h2>{post.title}</h2>
+          <p className="post_content">{post.content}</p>
+        </div>
 
-const CommentItem = styled.div`
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-`;
+        <h3 className="comment_title">댓글</h3>
+        <div>
+          <CommentList comments={comments} />
+        </div>
 
-function PostViewPage(props) {
-    const navigate = useNavigate();
-    const { postId } = useParams();
-
-    const post = data.posts.find((item) => {
-        return item.id === postId;
-    });
-
-    return (
-        <Wrapper>
-            <Container>
-                <button
-                    onClick={() => navigate("/")}
-                    style={{ marginBottom: "16px", cursor: "pointer", border: "none", padding: "5px 10px" }}
-                >
-                    뒤로 가기
-                </button>
-
-                <PostContainer>
-                    <TitleText>{post.title}</TitleText>
-                    <ContentText>{post.content}</ContentText>
-                </PostContainer>
-
-                <CommentLabel>댓글</CommentLabel>
-                <CommentContainer>
-                    {post.comments && post.comments.map((comment) => {
-                        return (
-                            <CommentItem key={comment.id}>
-                                {comment.content}
-                            </CommentItem>
-                        );
-                    })}
-                </CommentContainer>
-
-                <textarea 
-                    placeholder="댓글을 입력해주세요"
-                    style={{ width: "100%", height: "80px", marginTop: "16px" }}
-                />
-                <button style={{ marginTop: "8px", cursor: "pointer", border: "none", padding: "5px 10px"}}>
-                    댓글 작성하기
-                </button>
-            </Container>
-        </Wrapper>
-    );
+        <TextInput className="text_input"
+          height="60px" 
+          value={newComment} 
+          onChange={(e) => setNewComment(e.target.value)} 
+          placeholder="댓글을 입력하세요" 
+        />
+        <Button title="댓글 작성하기" onClick={addComment}/>
+      </div>
+    </div>
+  );
 }
-
-export default PostViewPage;
