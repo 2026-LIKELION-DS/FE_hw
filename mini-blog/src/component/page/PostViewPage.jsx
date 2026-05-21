@@ -59,6 +59,10 @@ export default function PostViewPage() {
     }
 
     const handleCommentSubmit = () => {
+        if (comment === "") {
+            alert("댓글을 입력해주세요.")
+            return;
+        }
         const newComment = {
             id: Date.now(),
             content: comment
